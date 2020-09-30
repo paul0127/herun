@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物須知</title>
+    <link rel="stylesheet" href="./Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Content/style.css" />
+  </head>
+  <body>
+    <!--側邊購物車-->
+    <div class="go_cart">
+      <a href="cart.html">
+        <img src="./Content/img/shopcart-shortcut-active-changedForWood.png">
+        <div class="text">
+            2,645<br>
+            結帳去
+        </div>
+      </a>
+    </div>
+    <!--頁首-->
+    <header>
+      <div class="container">
+        <div class="top_main">
+          <!--logo-->
+          <div class="logo">
+            <a href="./"
+              ><img src="./Content/img/img-logoWhite-header.png"
+            /></a>
+          </div>
+          <!--PC選單-->
+          <nav>
+            <ul>
+              <li class="sub">
+                <a href="javascript:void(0)">關於我們</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">品牌介紹</a></li>
+                    <li>
+                      <a href="artisan.html">工藝師專區</a>
+                    </li>
+                    <li><a href="#">企業服務</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="news.html">最新消息</a></li>
+              <li><a href="product.html">商品介紹</a></li>
+              <li><a href="#">據點</a></li>
+            </ul>
+          </nav>
+          <!--會員登入 搜尋icon-->
+          <div class="toolbar">
+            <ul>
+              <li class="login_btn">
+                <a href="login.html">登入</a>
+              </li>
+              <li class="user_btn sub">
+                <a href="javascript:void(0)"
+                  ><img src="./Content/img/user.svg"
+                /></a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="member.html">會員資料</a></li>
+                    <li><a href="policy.html">購物須知</a></li>
+                    <li><a href="member_order.html">訂單查詢</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="cart_btn sub">
+                <a href="javascript:void(0)"
+                  ><img src="./Content/img/icon-cart.svg" /><span>0</span></a
+                >
+                <div class="sub_menu">
+                  <ul>
+                    <li>
+                      <div class="name">商品名稱</div>
+                      <div class="price">$8,320</div>
+                    </li>
+                    <li>
+                      <div class="name">商品名稱</div>
+                      <div class="price">$8,320</div>
+                    </li>
+                  </ul>
+                  <div class="total">總計 $8,320</div>
+                  <div class="cart_in_btn"><a href="cart.html">立即結帳</a></div>
+                </div>
+              </li>
+              <li class="search_btn">
+                <img src="./Content/img/icon-search.png" />
+              </li>
+            </ul>
+          </div>
+          <!--彈出搜尋bar-->
+          <div class="search_bar">
+            <div class="container">
+              <form class="search_inner" action="/search" method="get">
+                <input type="text" name="search" placeholder="請輸入關鍵字" />
+                <button>搜尋</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="contain">
+      <div class="container">
+        <div class="bread">
+          <ul>
+            <li><a href="#">首頁</a></li>
+            <li>會員資料修改</li>
+          </ul>
+        </div>
+      </div>
+      <!--購物須知頁面 開始-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="panel panel-default">
+              <div class="panel-heading">會員中心</div>
+              <div class="panel-body">
+                <div class="list-group">
+                  <a href="member.html" class="list-group-item">會員資料修改</a>
+                  <a href="policy.html" class="list-group-item active"
+                    >購物須知</a
+                  >
+                  <a href="member_order.html" class="list-group-item"
+                    >訂單查詢</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-9 policy">
+            <div class="page-header h3">購物須知</div>
+            <h4>加入會員</h4>
+            <p></p>
+            <ol>
+              <li>
+                使用E-mail註冊會員<br />
+                點選上方加入會員→輸入E-mail與密碼→即可開始購物<br />
+              </li>
+              <li>
+                Facebook快速註冊會員<br />
+                點選上方加入會員→點選Facebook快速註冊→輸入您的Facebook帳號及密碼→即可開始購物<br />
+              </li>
+            </ol>
+            客服專線：02-2254-5329<br />
+            週一至週五：AM 09:00~12:00、PM 01:00~06:00<br />
+            <p></p>
+            <h4>選購商品</h4>
+
+            <img class="img-responsive" src="./Content/img/login/buy.png" />
+
+            <h4>付款方式</h4>
+            <p></p>
+            <ol>
+              <li>綠界第三方支付(信用卡)</li>
+              <li>貨到付款</li>
+            </ol>
+            如果選錯付款方式，請撥打客服專線，會有專員為您處理。<br />
+            <p></p>
+            <h4>填寫收件人資料</h4>
+            <p>請填寫完整收件人資料。</p>
+            <h4>結帳</h4>
+            <p>
+              依照您選擇的付款方式，根據網頁內容填寫付款資料，付款完畢後，即完成訂單。
+            </p>
+            <h4>等待到貨</h4>
+            <ul>
+              <li>
+                實際送達時間，以送貨司機路線及貨量為主。若需查尋配送狀態，請與正新鮮客服聯絡。
+              </li>
+              <li>
+                配送通常為上午時段，實際送達須依司機運量狀況，如有特別需求請於訂單備註。
+              </li>
+              <li>
+                運送時間為2-3個工作天(若遇大檔期如：節日、週年慶、特殊檔期等活動時，將延遲至3-5個工作天出貨，如有急需請務必備註期望收到的日期，我們會盡力幫您儘速出貨)，例假日不出貨，尚請見諒。
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--購物須知頁面 結束-->
+    </div>
+
+    <!--頁尾-->
+    <footer>
+      <div class="container">
+        <div class="footer_content">
+          <div class="footer_logo">
+            <a href="#"><img src="./Content/img/img-logoWhite-footer.png" /></a>
+          </div>
+          <div class="footer_link">
+            <ul>
+              <li><a href="#">關於我們</a></li>
+              <li><a href="#">最新消息</a></li>
+              <li><a href="#">商品介紹</a></li>
+              <li><a href="#">服務據點</a></li>
+              <li><a href="#">工藝師專區</a></li>
+            </ul>
+          </div>
+          <div class="footer_bottom">
+            <div class="contact">
+              <div>客服專線：02-12345678</div>
+              <div>AM 09:00-12:00、 PM 1:00~6:00 (週一至週六)</div>
+            </div>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="./Content/img/img-pinkoi-white.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./Content/img/icon-facebook.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./Content/img/icon-instagram.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./Content/img/icon-line.svg" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">Copyright @2005 - 2020青木堂傢具有限公司</div>
+        </div>
+      </div>
+    </footer>
+    <script src="./Scripts/jquery-1.10.2.min.js"></script>
+    <script src="./Scripts/main.js"></script>
+  </body>
+</html>

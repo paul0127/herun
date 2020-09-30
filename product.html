@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品列表</title>
+    <link rel="stylesheet" href="./Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Content/style.css" />
+  </head>
+  <body>
+    <!--側邊購物車-->
+    <div class="go_cart">
+      <a href="cart.html">
+        <img src="./Content/img/shopcart-shortcut-active-changedForWood.png">
+        <div class="text">
+            2,645<br>
+            結帳去
+        </div>
+      </a>
+    </div>
+    <!--頁首-->
+    <header>
+      <div class="container">
+        <div class="top_main">
+          <!--logo-->
+          <div class="logo">
+            <a href="./"
+              ><img src="./Content/img/img-logoWhite-header.png"
+            /></a>
+          </div>
+          <!--PC選單-->
+          <nav>
+            <ul>
+              <li class="sub">
+                <a href="javascript:void(0)">關於我們</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">品牌介紹</a></li>
+                    <li>
+                      <a href="artisan.html">工藝師專區</a>
+                    </li>
+                    <li><a href="#">企業服務</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="news.html">最新消息</a></li>
+              <li><a href="product.html">商品介紹</a></li>
+              <li><a href="#">據點</a></li>
+            </ul>
+          </nav>
+          <!--會員登入 搜尋icon-->
+          <div class="toolbar">
+            <ul>
+              <li class="login_btn">
+                <a href="login.html">登入</a>
+              </li>
+              <li class="user_btn sub">
+                <a href="javascript:void(0)"
+                  ><img src="./Content/img/user.svg"
+                /></a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="member.html">會員資料</a></li>
+                    <li><a href="policy.html">購物須知</a></li>
+                    <li><a href="member_order.html">訂單查詢</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="cart_btn sub">
+                <a href="javascript:void(0)"
+                  ><img src="./Content/img/icon-cart.svg" /><span>0</span></a
+                >
+                <div class="sub_menu">
+                  <ul>
+                    <li>
+                      <div class="name">商品名稱</div>
+                      <div class="price">$8,320</div>
+                    </li>
+                    <li>
+                      <div class="name">商品名稱</div>
+                      <div class="price">$8,320</div>
+                    </li>
+                  </ul>
+                  <div class="total">總計 $8,320</div>
+                  <div class="cart_in_btn"><a href="cart.html">立即結帳</a></div>
+                </div>
+              </li>
+              <li class="search_btn">
+                <img src="./Content/img/icon-search.png" />
+              </li>
+            </ul>
+          </div>
+          <!--彈出搜尋bar-->
+          <div class="search_bar">
+            <div class="container">
+              <form class="search_inner" action="/search" method="get">
+                <input type="text" name="search" placeholder="請輸入關鍵字" />
+                <button>搜尋</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="contain">
+      <!-- 麵包屑路徑 -->
+      <div class="container">
+        <div class="bread">
+          <ul>
+            <li><a href="#">首頁</a></li>
+            <li>商品介紹</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 產品列表內容開始 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 hidden-xs">
+            <ul class="side-menu">
+              <li>
+                <a href="javascript:(0)">家俱</a>
+                <ul class="side-menu-child">
+                  <li>
+                    <a href="product_list.html">日常</a>
+                  </li>
+                  <li>
+                    <a href="product_list.html">馨享</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:(0)">文創商品</a>
+                <ul class="side-menu-child">
+                  <li>
+                    <a href="product_list.html">工藝類</a>
+                  </li>
+                  <li>
+                    <a href="product_list.html">食器類</a>
+                  </li>
+                  <li>
+                    <a href="product_list.html">文具類</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:(0)">個性化服務</a>
+                <ul class="side-menu-child">
+                  <li>
+                    <a href="product_list.html">個性化服務</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-9">
+            <div class="product_section">
+              <div class="title_product">
+                <h1>家俱/馨享</h1>
+                <div class="more">
+                  <a href="product_list.html">更多商品 +</a>
+                </div>
+              </div>
+              <div class="row prod-list">
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds_01_【馨享】茶几.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】茶几</div>
+                  <div class="prod-price">$3999</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds_01-1_【馨享】休閒椅.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】休閒椅</div>
+                  <div class="prod-price">$6600</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds_01-2_【馨享】玄關桌.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】玄關桌</div>
+                  <div class="prod-price">$8500</div>
+                </div>
+              </div>
+            </div>
+            <div class="product_section">
+              <div class="title_product">
+                <h1>家俱/日常</h1>
+                <div class="more">
+                  <a href="product_list.html">更多商品 +</a>
+                </div>
+              </div>
+              <div class="row prod-list">
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-daily-01_2人位沙發.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】茶几</div>
+                  <div class="prod-price">$3999</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-daily-02_休閒椅.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】休閒椅</div>
+                  <div class="prod-price">$6600</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-daily-03_咖啡桌.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】玄關桌</div>
+                  <div class="prod-price">$8500</div>
+                </div>
+              </div>
+            </div>
+            <div class="product_section">
+              <div class="title_product">
+                <h1>文創商品/工藝類</h1>
+                <div class="more">
+                  <a href="product_list.html">更多商品 +</a>
+                </div>
+              </div>
+              <div class="row prod-list">
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-01_藝術品系列.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】茶几</div>
+                  <div class="prod-price">$3999</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-02_茶香水.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】休閒椅</div>
+                  <div class="prod-price">$6600</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-03_木器公仔.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】玄關桌</div>
+                  <div class="prod-price">$8500</div>
+                </div>
+              </div>
+            </div>
+            <div class="product_section">
+              <div class="title_product">
+                <h1>文創商品/食器類</h1>
+                <div class="more">
+                  <a href="product_list.html">更多商品 +</a>
+                </div>
+              </div>
+              <div class="row prod-list">
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-food-01_食盒.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】茶几</div>
+                  <div class="prod-price">$3999</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-food-02_沾板.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】休閒椅</div>
+                  <div class="prod-price">$6600</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-food-03_木碗.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】玄關桌</div>
+                  <div class="prod-price">$8500</div>
+                </div>
+              </div>
+            </div>
+            <div class="product_section">
+              <div class="title_product">
+                <h1>文創商品/文具類</h1>
+                <div class="more">
+                  <a href="product_list.html">更多商品 +</a>
+                </div>
+              </div>
+              <div class="row prod-list">
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-tool-01_豬光寶器禮盒.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】茶几</div>
+                  <div class="prod-price">$3999</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-tool-02_豬事順曆桌曆.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】休閒椅</div>
+                  <div class="prod-price">$6600</div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                  <a href="product_info.html">
+                    <img
+                      class="prod-img img-responsive"
+                      src="./Content/img/product/prds-creative-tool-03_鼎曆筆筒.png"
+                    />
+                  </a>
+                  <div class="prod-title">【馨享】玄關桌</div>
+                  <div class="prod-price">$8500</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /產品列表內容結束 -->
+    </div>
+    <!--頁尾-->
+    <footer>
+      <div class="container">
+        <div class="footer_content">
+          <div class="footer_logo">
+            <a href="#"><img src="./Content/img/img-logoWhite-footer.png" /></a>
+          </div>
+          <div class="footer_link">
+            <ul>
+              <li><a href="#">關於我們</a></li>
+              <li><a href="#">最新消息</a></li>
+              <li><a href="#">商品介紹</a></li>
+              <li><a href="#">服務據點</a></li>
+              <li><a href="#">工藝師專區</a></li>
+            </ul>
+          </div>
+          <div class="footer_bottom">
+            <div class="contact">
+              <div>客服專線：02-12345678</div>
+              <div>AM 09:00-12:00、 PM 1:00~6:00 (週一至週六)</div>
+            </div>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="./Content/img/img-pinkoi-white.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./Content/img/icon-facebook.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./Content/img/icon-instagram.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./Content/img/icon-line.svg" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">Copyright @2005 - 2020青木堂傢具有限公司</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./Scripts/jquery-1.10.2.min.js"></script>
+    <script src="./Scripts/main.js"></script>
+  </body>
+</html>
