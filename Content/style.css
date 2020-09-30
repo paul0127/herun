@@ -952,7 +952,6 @@ header {
 }
 
 /*首頁招募夥伴與使用體驗區塊*/
-.adv_block{}
 .adv_block .adv_inner{display: flex;padding: 5rem 0;border-top: 1px solid #dddddd;}
 .adv_block .adv_inner .inner_block{flex: 1;padding-bottom: 30%;background-position: center;background-size: 100%;background-repeat: none; margin-right: 3rem;position: relative;}
 .adv_block .adv_inner .inner_block:last-child{margin: 0;}
@@ -1905,7 +1904,6 @@ a.news_item:hover .news_btn .circle {
 .table tbody tr td{text-align: center;font-size: .9rem;}
 
 /*組織業績表*/
-.performance{}
 .performance .title{font-size: 1.75rem;font-weight: 500;line-height: 1.5;border-bottom: 1px solid #ddd;margin-bottom: 2rem;}
 .performance .top .table tbody tr td{text-align: left;}
 .performance .top .table tbody tr td:first-child{width:25%;}
