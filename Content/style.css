@@ -787,9 +787,7 @@ header {
   }
   .news_title h1 {
     font-size: 1.25rem;
-  }
-  .news_title::after {
-    width: 180px;
+    border-bottom: 2px solid #fff;
   }
   .news_block .more {
     width: 100px;
@@ -800,6 +798,7 @@ header {
   .news_block .more a {
     font-size: 10px;
   }
+  .news_slider{margin-top: 2rem;}
   .news_slider .item h2 {
     margin: 0.8rem 0;
   }
@@ -973,6 +972,7 @@ header {
 @media (max-width: 992px) {
   .adv_block .adv_inner{flex-wrap: wrap;padding: 2rem 0;}
   .adv_block .adv_inner .inner_block{flex: 100%;margin: 0 0 1.5rem 0;padding-bottom: 63%;}
+  .adv_block .adv_inner .inner_block .text_outside .text_block h2{font-size: 1.75rem;}
 }
 
 /*頁尾*/
