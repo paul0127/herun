@@ -656,49 +656,11 @@ header {
 .slider_block img {
   width: 100%;
 }
-.slider_block .go_to {
-  position: absolute;
-  left: calc(50% - 40px);
-  bottom: -40px;
-  width: 80px;
-  height: 80px;
-  background-color: #555555;
-  border-radius: 100%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-.slider_block .go_to::after {
-  content: '';
-  background-image: url(./img/Group\ 25.png);
-  background-size: 100% 100%;
-  color: #fff;
-  display: block;
-  width: 28px;
-  height: 30px;
-  transition-duration: 0.3s;
-}
-.slider_block .go_to:hover::after {
-  transform: translateY(3px);
-}
 @media (max-width: 992px) {
   .slider_block .owl-dots .owl-dot {
     width: 10px;
     height: 10px;
     margin: 6px;
-  }
-
-  .slider_block .go_to {
-    left: calc(50% - 18px);
-    bottom: -18px;
-    width: 36px;
-    height: 36px;
-  }
-  .slider_block .go_to::after {
-    width: 14px;
-    height: 14px;
   }
 }
 
@@ -723,10 +685,6 @@ header {
   font-size: 1.85rem;
   font-weight: 600;
   letter-spacing: 1px;
-}
-.news_title h1 span {
-  font-weight: 300;
-  margin: 0 8px;
 }
 .news_block .more {
   position: absolute;
@@ -831,15 +789,10 @@ header {
   .news_slider {
     margin-top: 2rem;
   }
-  .news_slider .item h2 {
-    margin: 0.8rem 0;
-  }
   .news_slider .item p {
     margin-bottom: 0;
   }
-  .news_slider .item h2,
-  .news_slider .item p,
-  .news_slider .item .place {
+  .news_slider .item p{
     font-size: 1rem;
   }
   .news_slider .item .btn a {
@@ -848,6 +801,7 @@ header {
   }
 }
 
+/*首頁中間背景圖*/
 .index_contain {
   background-image: url(./img/index/728x401_底紋.png);
   background-repeat: repeat;
@@ -923,7 +877,6 @@ header {
   .products_block .col-sm-6:nth-child(2n + 1) {
     clear: both;
   }
-
   .products_block .list .item {
     margin-bottom: 1.25rem;
   }
@@ -975,10 +928,14 @@ header {
   padding-bottom: 29%;
   background-position: center;
   background-size: 100%;
-  background-repeat: none;
+  background-repeat: no-repeat;
   margin-right: 3rem;
   position: relative;
   border: 8px solid #ac9b65;
+  transition: background .5s;
+}
+.adv_block .adv_inner .inner_block:hover{
+  background-size: 120%;
 }
 .adv_block .adv_inner .inner_block:last-child {
   margin: 0;
@@ -1019,15 +976,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.adv_block .adv_inner .inner_block .text_outside .text_block .btn a {
   color: #fff;
   font-size: 1.25rem;
   text-decoration: none;
   font-weight: 900;
-}
-.adv_block .adv_inner .inner_block .text_outside .text_block .btn a:hover {
-  opacity: 0.8;
 }
 .adv_block .adv_inner .inner_block.white .text_outside .text_block h2 {
   color: #fff;
@@ -1038,16 +990,12 @@ header {
   text-shadow: 0.5px 0.5px 0px #000;
 }
 .adv_block .adv_inner .inner_block.white .text_outside .text_block .btn {
+  color: #fff;
   border-color: #fff;
 }
 .adv_block .adv_inner .inner_block.black .text_outside .text_block .btn {
-  border-color: #000;
-}
-.adv_block .adv_inner .inner_block.white .text_outside .text_block .btn a {
-  color: #fff;
-}
-.adv_block .adv_inner .inner_block.black .text_outside .text_block .btn a {
   color: #333;
+  border-color: #000;
 }
 @media (max-width: 992px) {
   .adv_block .adv_inner {
@@ -1144,12 +1092,6 @@ footer .footer_bottom .social ul li {
 }
 footer .footer_bottom .social ul li a:hover {
   opacity: 0.8;
-}
-/*頁尾版權宣告*/
-footer .copyright {
-  color: #999999;
-  font-size: 1.25rem;
-  margin-top: 4.5rem;
 }
 @media (max-width: 992px) {
   footer .footer_content {
