@@ -111,7 +111,7 @@ header {
 .top_main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 /*手機版選單 開啟按鈕*/
@@ -329,7 +329,7 @@ header {
   > li.cart_btn
   > .sub_menu
   > .cart_in_btn {
-  background-color: #e14344;
+  background-color: #e5796d;
   margin-top: 1rem;
 }
 .top_main
@@ -356,9 +356,6 @@ header {
   opacity: 0.8;
 }
 /*pc 選單*/
-.top_main > nav {
-  height: 70px;
-}
 .top_main > nav > ul {
   display: flex;
   padding-left: 0;
@@ -368,7 +365,7 @@ header {
 }
 .top_main > nav > ul > li {
   font-size: 1.1rem;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -426,9 +423,6 @@ header {
   transform: scaleY(1);
 }
 /*會員登入 購物車 搜尋icon*/
-.toolbar {
-  height: 70px;
-}
 .toolbar > ul {
   padding-left: 0;
   display: flex;
@@ -438,7 +432,7 @@ header {
   margin-bottom: 0;
 }
 .toolbar > ul > li {
-  margin-right: 0.5rem;
+  margin-right: 0;
   height: 100%;
   font-size: 1.15rem;
   display: flex;
@@ -464,13 +458,15 @@ header {
 .toolbar > ul > li.cart_btn > a > span {
   width: 21px;
   height: 21px;
-  background-color: #858585;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 6px;
   border-radius: 100%;
   font-size: 14px;
+  color: #ac9b65;
+  font-weight: 500;
 }
 .toolbar > ul > li.sub > a::after {
   content: url(./img/caret-down.svg);
@@ -478,7 +474,7 @@ header {
   display: block;
 }
 .toolbar > ul > li.sub.active {
-  background-color: #555555;
+  background-color: #ee736b;
 }
 .toolbar > ul > li > .sub_menu {
   position: absolute;
@@ -515,7 +511,7 @@ header {
   text-align: center;
 }
 .toolbar > ul > li.user_btn > .sub_menu > ul > li > a:hover {
-  background-color: #b28146;
+  background-color: #ee736b;
   color: #fff;
 }
 /*購物車下拉選單*/
@@ -544,7 +540,7 @@ header {
   padding: 0.5rem 1.25rem;
 }
 .toolbar > ul > li.cart_btn > .sub_menu > .cart_in_btn > a {
-  background-color: #e14344;
+  background-color: #ee736b;
   color: #fff;
   display: block;
   width: 100%;
@@ -601,6 +597,9 @@ header {
 @media (max-width: 992px) {
   header {
     border-bottom: none;
+  }
+  .top_main{
+    align-items: center;
   }
   .top_main .mobile_nav {
     display: block;
