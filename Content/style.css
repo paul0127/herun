@@ -436,7 +436,7 @@ header {
   margin-bottom: 0;
 }
 .toolbar > ul > li {
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
   height: 100%;
   font-size: 1.15rem;
   display: flex;
