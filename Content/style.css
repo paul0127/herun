@@ -387,7 +387,7 @@ header {
   content: url(./img/caret-down.svg);
   margin: 0 0 0 0.5rem;
   display: block;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 .top_main > nav > ul > li.sub > div.sub_menu {
   position: absolute;
