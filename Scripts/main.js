@@ -174,14 +174,7 @@ $(document).on('click', '.mobile_nav', function () {
   $('.mobile_menu').toggleClass('active')
   $('.search_bar').removeClass('active')
 
-  if (
-    $('.search_bar').hasClass('active') ||
-    $('.mobile_menu').hasClass('active')
-  ) {
-    $('.mobile_menu_close').addClass('active')
-  } else {
-    $('.mobile_menu_close').removeClass('active')
-  }
+  menu_close_toggle()
 })
 
 /*pc版會員、購物車選單開啟關閉*/
@@ -193,6 +186,8 @@ $(document).on('click', '.toolbar li.sub a', function () {
   if(!t){
     $(this.parentNode).addClass('active')
   }
+
+  menu_close_toggle()
 })
 
 /*手機版子選單開關*/
@@ -217,15 +212,22 @@ $(document).on('click', '.search_btn', function () {
   $('.mobile_nav').removeClass('active')
   $('.mobile_menu').removeClass('active')
 
+  menu_close_toggle()
+})
+
+/*判斷遮幕開或關*/
+function menu_close_toggle() {
   if (
     $('.search_bar').hasClass('active') ||
-    $('.mobile_menu').hasClass('active')
+    $('.mobile_menu').hasClass('active') ||
+    $('.cart_btn.sub').hasClass('active') ||
+    $('.user_btn.sub').hasClass('active')
   ) {
     $('.mobile_menu_close').addClass('active')
   } else {
     $('.mobile_menu_close').removeClass('active')
   }
-})
+}
 
 /*點擊遮幕關閉選單及搜尋*/
 /*$(document).on('click', '.mobile_menu_close', function () {
@@ -239,6 +241,7 @@ function menu_close(){
   $('.mobile_menu').removeClass('active')
   $('.mobile_menu_close').removeClass('active')
   $('.search_bar').removeClass('active')
+  $('.toolbar li.sub').removeClass('active')
 }
 
 /*產品內頁 更換圖片 */
