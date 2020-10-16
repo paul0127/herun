@@ -1151,6 +1151,7 @@ footer .footer_bottom .social ul li a:hover {
   display: flex;
   align-items: center;
   margin-bottom: 0;
+  flex-wrap: wrap;
 }
 .bread ul li {
   font-size: 1.1rem;
@@ -1164,12 +1165,12 @@ footer .footer_bottom .social ul li a:hover {
 .bread ul li a:hover {
   opacity: 0.8;
 }
-.bread ul li::after {
+.bread ul li::before {
   content: '/';
   margin: 0 5px;
   color: #dddddd;
 }
-.bread ul li:last-child::after {
+.bread ul li:first-child::before {
   display: none;
 }
 
@@ -1234,17 +1235,29 @@ footer .footer_bottom .social ul li a:hover {
 
 /*側邊攔*/
 .side_menu {
-  background-color: #ee736b;
   width: 244px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   margin-right: 20px;
-  min-height: 800px;
 }
-.side_menu ul {
+.side_menu .side_menu_toggle {
+  display: none;
+  background-color: #555555;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem 0;
+  cursor: pointer;
+}
+.side_menu .side_menu_toggle:hover {
+  opacity: 0.8;
+}
+.side_menu > ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+  background-color: #ee736b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 800px;
+  height: 100%;
 }
 .side_menu ul > li > label {
   background-color: #ac9b65;
@@ -1277,6 +1290,7 @@ footer .footer_bottom .social ul li a:hover {
 }
 .side_menu ul > li > ul {
   padding: 10px 0;
+  list-style: none;
 }
 .side_menu ul > li > ul > li > a {
   color: #fff;
@@ -1291,8 +1305,38 @@ footer .footer_bottom .social ul li a:hover {
 }
 
 @media (max-width: 992px) {
+  .member_container {
+    flex-wrap: wrap;
+  }
   .side_menu {
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    position: relative;
+  }
+  .side_menu .side_menu_toggle {
+    display: block;
+  }
+  .side_menu .side_menu_toggle::before {
+    content: '開啟次選單';
+  }
+  .side_menu.active .side_menu_toggle::before {
+    content: '關閉次選單';
+  }
+  .side_menu > ul {
+    min-height: unset;
+    height: auto;
+    width: 100%;
+    border-radius: unset;
+    border: 1px solid #eee;
+    border-top: none;
     display: none;
+  }
+  .side_menu.active > ul {
+    display: block;
+  }
+  .side_menu ul > li > label {
+    border-radius: unset;
   }
 }
 
@@ -1329,9 +1373,10 @@ footer .footer_bottom .social ul li a:hover {
   color: #fff;
   font-size: 0.75rem;
   text-align: center;
-  line-height: 3;
+  line-height: 1.5;
   border-right: 1.5px solid #ddd;
   font-weight: 500;
+  padding: 10px 0;
 }
 .member_main .table .head .th:last-child {
   border-right: none;
@@ -1352,7 +1397,7 @@ footer .footer_bottom .social ul li a:hover {
   color: #585858;
   font-size: 0.8rem;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.25;
   border-right: 1.5px solid #ddd;
   font-weight: 300;
   padding: 10px 0;
@@ -1424,7 +1469,7 @@ footer .footer_bottom .social ul li a:hover {
   outline: none;
   border: 1px solid #bbb;
   padding: 5px 8px;
-  width: 205px;
+  flex: 0 0 205px;
   border-radius: 5px;
 }
 .member_main .form .list .input input[type='file'] {
@@ -1470,13 +1515,13 @@ footer .footer_bottom .social ul li a:hover {
 }
 /*會員表單 生日下拉寬度*/
 .member_main .form .list .input .birth .year {
-  width: 80px;
+  flex: 0 0 80px;
 }
 .member_main .form .list .input .birth .month {
-  width: 60px;
+  flex: 0 0 60px;
 }
 .member_main .form .list .input .birth .day {
-  width: 60px;
+  flex: 0 0 60px;
 }
 /*會員空白間格*/
 .member_main .space {
@@ -1501,6 +1546,42 @@ footer .footer_bottom .social ul li a:hover {
 }
 .member_main .confirm .btn:hover {
   opacity: 0.8;
+}
+@media (max-width: 992px) {
+  .member_main .form .list .input {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .member_main .form .list .input input[type='text'],
+  .member_main .form .list .input select {
+    flex: 1;
+  }
+  .member_main .form .list .input button.to_search {
+    flex: 0 0 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    justify-content: center;
+  }
+  .member_main .table .tr .td {
+    word-break: break-all;
+  }
+  .member_main .table .tr .td .detail {
+    width: 60px;
+    padding: 1px 3px;
+  }
+  /*會員表單 生日下拉寬度*/
+  .member_main .form .list .input .birth .year {
+    flex: 1;
+  }
+  .member_main .form .list .input .birth .month {
+    flex: 1;
+  }
+  .member_main .form .list .input .birth .day {
+    flex: 1;
+  }
+  .member_main .table .number {
+    flex: 0 0 35px !important;
+  }
 }
 
 /*最新消息列表*/
@@ -2563,7 +2644,7 @@ a.news_item:hover .news_btn .circle {
     display: none;
   }
 
-  .cart_form .payment .list img{
+  .cart_form .payment .list img {
     height: 20px;
   }
 
@@ -2575,10 +2656,20 @@ a.news_item:hover .news_btn .circle {
   .cart_form .delivery .list .content .input label {
     flex: 0 0 110px;
   }
-  .cart_form .delivery .list .content .input select{flex: 0 0 calc((100% - 120px) / 2 - 2.5px);}
-  .cart_form .delivery .list .content .input select:nth-child(3){margin-right: 0;}
-  .cart_form .delivery .list .content .input input.addr{margin-top: 1rem;flex: 0 0 calc(100% - 120px);margin-left: auto;}
-  .cart_form .delivery .list .content .bottom .check_box{flex: 0 0 110px;}
+  .cart_form .delivery .list .content .input select {
+    flex: 0 0 calc((100% - 120px) / 2 - 2.5px);
+  }
+  .cart_form .delivery .list .content .input select:nth-child(3) {
+    margin-right: 0;
+  }
+  .cart_form .delivery .list .content .input input.addr {
+    margin-top: 1rem;
+    flex: 0 0 calc(100% - 120px);
+    margin-left: auto;
+  }
+  .cart_form .delivery .list .content .bottom .check_box {
+    flex: 0 0 110px;
+  }
 }
 
 /*購物車 訂單資訊 配送方式和付款方式*/
@@ -2671,7 +2762,8 @@ a.news_item:hover .news_btn .circle {
   .cart_profile .payment {
     flex: 0 0 100%;
   }
-  .cart_profile .delivery .content .list label, .cart_profile .payment .content .list label{
+  .cart_profile .delivery .content .list label,
+  .cart_profile .payment .content .list label {
     flex: 0 0 95px;
   }
 }
@@ -2719,9 +2811,12 @@ a.news_item:hover .news_btn .circle {
 .cart_step .go_index:hover {
   opacity: 0.8;
 }
-
-
-
+@media (max-width: 992px) {
+  .cart_step .red,
+  .cart_step .brown {
+    font-size: 1rem;
+  }
+}
 /*login*/
 .login-right .btn {
   margin-bottom: 15px;
@@ -2815,75 +2910,6 @@ fieldset[disabled] .btn-fb.active {
   border-bottom-color: #b28146;
 }
 
-/*購物車 付款頁面 框*/
-.form-box {
-  padding: 15px 30px;
-  overflow: hidden;
-  background-color: #fff;
-}
-@media (max-width: 992px) {
-  .form-box {
-    padding: 15px;
-  }
-}
-
-.order-title {
-  background: #b3b3b3;
-  color: #fff;
-  padding: 12px 15px;
-  display: flex;
-  align-items: center;
-}
-.order-title img {
-  margin-right: 10px;
-}
-
-.shop-table-title {
-  color: #ac9b65;
-  font-weight: 900;
-}
-.shop-table-body {
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-.shop-table-body img {
-  max-width: 100%;
-}
-.shop-table-body a {
-  color: #333;
-}
-
-@media (min-width: 768px) {
-  .shop_cart-list-tag {
-    display: none;
-  }
-}
-
-.free-shipping-tip {
-  padding: 10px;
-  background: #e04343;
-  color: #fff;
-}
-
-.panel {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.back-btn,
-.next-btn,
-.back-btn:hover,
-.next-btn:hover,
-.back-btn:focus,
-.next-btn:focus {
-  background-color: #b28146;
-  border-color: #b28146;
-}
-.back-btn:hover,
-.next-btn:hover {
-  opacity: 0.8;
-}
-
 .log-in,
 .log-in:hover,
 .log-in:focus {
@@ -2892,21 +2918,4 @@ fieldset[disabled] .btn-fb.active {
 }
 .log-in:hover {
   opacity: 0.8;
-}
-
-.edit_btn,
-.edit_btn:hover,
-.edit_btn:focus {
-  background-color: #b28146;
-  border-color: #b28146;
-}
-.edit_btn:hover {
-  opacity: 0.8;
-}
-
-.list-group-item.active,
-.list-group-item.active:hover,
-.list-group-item.active:focus {
-  background-color: #b28146;
-  border-color: #b28146;
 }

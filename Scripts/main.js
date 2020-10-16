@@ -97,18 +97,6 @@ $(document).ready(function () {
       },
     })
   }
-
-  /* 工藝師專區產生手機版圖*/
-  let list = document.querySelectorAll('.artisan_item .img img')
-  let m_list = document.querySelectorAll('.artisan_item .main')
-
-  list.forEach((item, index) => {
-    let src = item.getAttribute('src')
-    let img = document.createElement('img')
-    img.className = 'm_img'
-    img.setAttribute('src', src)
-    m_list[index].prepend(img)
-  })
 })
 
 /*更換網址 query */
@@ -162,12 +150,6 @@ function go_top(){
   $('html,body').animate({ scrollTop: 0 }, 900)
 }
 
-/*卷軸置最新消息*/
-$(document).on('click', '.go_to', function () {
-  let t = $('#news').offset()
-  $('html,body').animate({ scrollTop: t.top }, 900)
-})
-
 /*手機選單開啟關閉*/
 $(document).on('click', '.mobile_nav', function () {
   $('.mobile_nav').toggleClass('active')
@@ -191,12 +173,12 @@ $(document).on('click', '.toolbar li.sub a', function () {
 })
 
 /*手機版子選單開關*/
-$(document).on('click', '.mobile_menu .main li.sub a', function () {
+$(document).on('click', '.mobile_menu .main li.sub > a', function () {
   $(this.parentNode).toggleClass('active')
 })
 
 /*手機版會員、購物車選單開啟關閉*/
-$(document).on('click', '.mobile_menu .bottom li.sub a', function () {
+$(document).on('click', '.mobile_menu .bottom li.sub > a', function () {
   let t = $(this.parentNode).hasClass('active')
 
   $('.mobile_menu .bottom li.sub').removeClass('active')
@@ -243,6 +225,11 @@ function menu_close(){
   $('.search_bar').removeClass('active')
   $('.toolbar li.sub').removeClass('active')
 }
+
+/*次選單開啟關閉*/
+$(document).on('click', '.side_menu_toggle', function () {
+  $('.side_menu').toggleClass('active')
+})
 
 /*產品內頁 更換圖片 */
 $(document).on('click', '.small_pic li', function () {
