@@ -1469,7 +1469,7 @@ footer .footer_bottom .social ul li a:hover {
   outline: none;
   border: 1px solid #bbb;
   padding: 5px 8px;
-  flex: 0 0 205px;
+  flex: 0 0 220px;
   border-radius: 5px;
 }
 .member_main .form .list .input input[type='file'] {
@@ -1548,6 +1548,10 @@ footer .footer_bottom .social ul li a:hover {
   opacity: 0.8;
 }
 @media (max-width: 992px) {
+  .member_main .title {
+    font-size: 1.25rem;
+  }
+  .member_main .space{height: 1.5rem;}
   .member_main .form .list .input {
     padding: 10px;
     flex-wrap: wrap;
