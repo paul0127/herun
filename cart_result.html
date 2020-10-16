@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>購物車</title>
+    <title>訂購資訊</title>
     <link rel="stylesheet" href="./Content/bootstrap.min.css" />
     <link rel="stylesheet" href="./Content/font-awesome.min.css" />
     <link rel="stylesheet" href="./Content/style.css" />
@@ -117,7 +117,7 @@
       <!--購物車頁面 開始-->
       <div class="container">
         <div class="stepwizard">
-          <div class="stepwizard-step active">
+          <div class="stepwizard-step">
             <a class="btn">1</a>
             <p>購物清單</p>
           </div>
@@ -129,7 +129,7 @@
             <a class="btn">3</a>
             <p>付款資訊</p>
           </div>
-          <div class="stepwizard-step">
+          <div class="stepwizard-step active">
             <a class="btn">4</a>
             <p>完成訂單</p>
           </div>
@@ -151,7 +151,6 @@
             <div class="th price">單價</div>
             <div class="th qty">數量</div>
             <div class="th m_total">小計</div>
-            <div class="th operating"></div>
           </div>
           <!--商品內容-->
           <div class="body">
@@ -166,18 +165,9 @@
                 </div>
                 <div class="td price">$1,400</div>
                 <div class="td qty">
-                  <button class="minus" onclick="product_qty(0)">-</button
-                  ><input
-                    id="qty"
-                    type="number"
-                    value="1"
-                    placeholder="數量"
-                  /><button onclick="product_qty(1)" class="plus">+</button>
+                  1
                 </div>
                 <div class="td m_total">$1,400</div>
-                <div class="td operating">
-                  <button class="delete">移除</button>
-                </div>
               </div>
             </div>
             <!--商品單項內容-->
@@ -191,17 +181,9 @@
                 </div>
                 <div class="td price">$1,400</div>
                 <div class="td qty">
-                  <button class="minus">-</button
-                  ><input type="number" value="1" placeholder="數量" /><button
-                    class="plus"
-                  >
-                    +
-                  </button>
+                  1
                 </div>
                 <div class="td m_total">$1,400</div>
-                <div class="td operating">
-                  <button class="delete">移除</button>
-                </div>
               </div>
             </div>
           </div>
@@ -210,26 +192,66 @@
             <div class="tr">
               <div class="td">價格小計</div>
               <div class="td m_total">$ 680</div>
-              <div class="td operating">
-              </div>
             </div>
             <div class="tr">
               <div class="td">運費</div>
               <div class="td m_total">$ 180</div>
-              <div class="td operating">
-              </div>
             </div>
             <div class="tr">
               <div class="td">總計</div>
               <div class="td m_total">$ 860</div>
-              <div class="td operating">
+            </div>
+          </div>
+        </div>
+        <div class="cart_profile">
+          <div class="delivery">
+            <div class="title">
+              <img src="./Content/img/index/24x21_上bar_icon.png" />配送資訊
+            </div>
+            <div class="content">
+              <div class="list">
+                <label><span>訂單編號</span></label>
+                <div class="text">202009091434280293</div>
+              </div>
+              <div class="list">
+                <label><span>配送方式</span></label>
+                <div class="text">宅配到府</div>
+              </div>
+              <div class="list">
+                <label><span>收件人姓名</span></label>
+                <div class="text">吴佳麦</div>
+              </div>
+              <div class="list">
+                <label><span>收件人電話</span></label>
+                <div class="text">0911257723</div>
+              </div>
+              <div class="list">
+                <label><span>電子郵件</span></label>
+                <div class="text">chalingwui23@gmail.com</div>
+              </div>
+              <div class="list">
+                <label><span>收件人地址</span></label>
+                <div class="text">224新北市瑞芳區三陽路42-2號7糖</div>
+              </div>
+              <div class="list">
+                <label><span>備註</span></label>
+                <div class="text">無備註</div>
+              </div>
+            </div>
+          </div>
+          <div class="payment">
+            <div class="title">
+              <img src="./Content/img/index/24x21_上bar_icon.png" />付款資訊
+            </div>
+            <div class="content">
+              <div class="list">
+                <label><span>貨到付款</span></label>
               </div>
             </div>
           </div>
         </div>
         <div class="cart_step">
-          <a href="#" class="back">繼續購物</a>
-          <a href="#" class="next">下一步</a>
+          <a href="#" class="go_index">返回首頁</a>
         </div>
       </div>
       <!--購物車頁面 結束-->

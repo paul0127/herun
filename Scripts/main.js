@@ -255,6 +255,7 @@ $(document).on('click', '.small_pic li', function () {
 
 /*產品內頁 數量增加或減少 n為true=>增加 n為false=>減少*/
 function product_qty(n) {
+  console.log(this)
   let q = Number($('#qty').val())
   if (n && q < 10) {
     q = q + 1
