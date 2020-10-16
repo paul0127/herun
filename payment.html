@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>訂購資訊</title>
+    <title>付款方式</title>
     <link rel="stylesheet" href="./Content/bootstrap.min.css" />
     <link rel="stylesheet" href="./Content/font-awesome.min.css" />
     <link rel="stylesheet" href="./Content/style.css" />
@@ -125,140 +125,33 @@
             <a class="btn">2</a>
             <p>配送資訊</p>
           </div>
-          <div class="stepwizard-step">
+          <div class="stepwizard-step active">
             <a class="btn">3</a>
             <p>付款資訊</p>
           </div>
-          <div class="stepwizard-step active">
+          <div class="stepwizard-step">
             <a class="btn">4</a>
             <p>完成訂單</p>
           </div>
         </div>
 
         <div class="page-heading">
-          <span class="page-heading-title">訂購資訊</span>
+          <span class="page-heading-title">請選擇付款方式</span>
         </div>
         <!--購物清單-->
         <div class="cart_form">
-          <!--大標題-->
-          <div class="title">
-            <img src="./Content/img/index/24x21_上bar_icon.png" />訂單明細
-          </div>
-          <!--表格標題-->
-          <div class="head">
-            <div class="th pic">商品圖片</div>
-            <div class="th">商品名稱</div>
-            <div class="th price">單價</div>
-            <div class="th qty">數量</div>
-            <div class="th m_total">小計</div>
-          </div>
-          <!--商品內容-->
-          <div class="body">
-            <!--商品單項內容-->
-            <div class="list">
-              <div class="td pic">
-                <img src="./Content/img/cart/pic01.png" />
-              </div>
-              <div class="tr">
-                <div class="td">
-                  <a href="#">薰衣草芳香精油(3罐一組)</a>
-                </div>
-                <div class="td price">$1,400</div>
-                <div class="td qty">
-                  1
-                </div>
-                <div class="td m_total">$1,400</div>
-              </div>
-            </div>
-            <!--商品單項內容-->
-            <div class="list">
-              <div class="td pic">
-                <img src="./Content/img/cart/pic02.png" />
-              </div>
-              <div class="tr">
-                <div class="td">
-                  <a href="#">清爽保濕化妝水</a>
-                </div>
-                <div class="td price">$2,200</div>
-                <div class="td qty">
-                  2
-                </div>
-                <div class="td m_total">$4,400</div>
-              </div>
-            </div>
-          </div>
-          <!--商品清單 總計-->
-          <div class="foot">
-            <div class="tr">
-              <div class="td">價格小計</div>
-              <div class="td m_total">$5,800</div>
-            </div>
-            <div class="tr no_padding_bottom">
-              <div class="td">折扣/折價券</div>
-              <div class="td m_total">-$30</div>
-            </div>
-            <div class="tr no_padding_top">
-              <div class="td">運費</div>
-              <div class="td m_total">$0</div>
-            </div>
-            <div class="tr">
-              <div class="td">總計</div>
-              <div class="td m_total">$5,770</div>
-            </div>
-          </div>
-        </div>
-        <!--配送資訊及付款資訊-->
-        <div class="cart_profile">
-          <!--配送資訊-->
-          <div class="delivery">
-            <div class="title">
-              <img src="./Content/img/cart/ICON_1016-01_0.png" />配送資訊
-            </div>
-            <div class="content">
-              <div class="list">
-                <label><span>訂單編號</span></label>
-                <div class="text">202009091434280293</div>
-              </div>
-              <div class="list">
-                <label><span>配送方式</span></label>
-                <div class="text">宅配到府</div>
-              </div>
-              <div class="list">
-                <label><span>收件人姓名</span></label>
-                <div class="text">吴佳麦</div>
-              </div>
-              <div class="list">
-                <label><span>收件人電話</span></label>
-                <div class="text">0911257723</div>
-              </div>
-              <div class="list">
-                <label><span>電子郵件</span></label>
-                <div class="text">chalingwui23@gmail.com</div>
-              </div>
-              <div class="list">
-                <label><span>收件人地址</span></label>
-                <div class="text">224新北市瑞芳區三陽路42-2號7糖</div>
-              </div>
-              <div class="list">
-                <label><span>備註</span></label>
-                <div class="text">無備註</div>
-              </div>
-            </div>
-          </div>
-          <!--付款資訊-->
           <div class="payment">
-            <div class="title">
-              <img src="./Content/img/cart/ICON_1016-02_0.png" />付款資訊
+            <div class="list">
+              <input type="radio" id="payment_0" name="payment" value="0" checked><label for="payment_0"><span class="circle"></span>貨到付款</label>
             </div>
-            <div class="content">
-              <div class="list">
-                <label><span class="no_justify">貨到付款</span></label>
-              </div>
+            <div class="list">
+              <input type="radio" id="payment_1" name="payment" value="1"><label for="payment_1"><span class="circle"></span>信用卡付款<img src="./Content/img/cart/paypage_1.png"></label>
             </div>
           </div>
         </div>
         <div class="cart_step">
-          <a href="payment.html" class="go_index">返回首頁</a>
+          <a href="delivery.html" class="brown">上一步</a>
+          <a href="cart_result.html" class="red">確認訂購</a>
         </div>
       </div>
       <!--購物車頁面 結束-->

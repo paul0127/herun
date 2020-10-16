@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   position: relative;
+  font-size: 16px;
 }
 h1,
 h2,
@@ -2152,14 +2153,15 @@ a.news_item:hover .news_btn .circle {
     font-size: 1rem;
   }
   .stepwizard-step p {
-    bottom: -100%;
+    bottom: calc(-100% + 5px);
+    font-size: 0.8rem;
   }
 }
 /*購物大標題*/
 .page-heading {
   border-bottom: 2px solid #e9e9e9;
   text-align: center;
-  line-height: normal;
+  line-height: 1;
 }
 .page-heading-title {
   font-size: 1.6rem;
@@ -2173,9 +2175,10 @@ a.news_item:hover .news_btn .circle {
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translateY(50%);
   width: 100%;
   border-bottom: 3px solid #ea756b;
+}
+@media (max-width: 992px) {
 }
 
 /*購物車 購物清單*/
@@ -2183,6 +2186,7 @@ a.news_item:hover .news_btn .circle {
   padding: 30px;
   overflow: hidden;
   background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 /*購物車 購物清單 大標題*/
 .cart_form .title {
@@ -2196,6 +2200,7 @@ a.news_item:hover .news_btn .circle {
 }
 .cart_form .title img {
   margin-right: 10px;
+  width: 25px;
 }
 /*購物車 購物清單 表格標題*/
 .cart_form .head {
@@ -2215,7 +2220,7 @@ a.news_item:hover .news_btn .circle {
 }
 /*購物車 購物清單 商品內容*/
 .cart_form .body {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
 }
 .cart_form .body .list {
   display: flex;
@@ -2225,6 +2230,7 @@ a.news_item:hover .news_btn .circle {
   flex: 1;
   margin-right: 2rem;
   line-height: 2;
+  font-size: 0.9rem;
 }
 .cart_form .body .list .td:last-child {
   margin-right: 0;
@@ -2290,13 +2296,25 @@ a.news_item:hover .news_btn .circle {
 .cart_form .operating button.delete:hover {
   background-color: #c4c4c4;
 }
-
+/*購物車 購物清單 總計 運費 欄位*/
 .cart_form .foot {
-  padding-bottom: 7rem;
+  padding-bottom: 3rem;
 }
 .cart_form .foot .tr {
   display: flex;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
+}
+.cart_form .foot .tr.no_padding_bottom {
+  border-bottom: none;
+}
+.cart_form .foot .tr.no_padding_bottom .td {
+  padding-bottom: 0;
+}
+.cart_form .foot .tr.no_padding_top {
+  border-top: none;
+}
+.cart_form .foot .tr.no_padding_top .td {
+  padding-top: 0;
 }
 .cart_form .foot .tr:last-child {
   border-bottom: none;
@@ -2306,7 +2324,8 @@ a.news_item:hover .news_btn .circle {
   margin-right: 2rem;
   text-align: right;
   line-height: 2;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
 }
 .cart_form .foot .tr .td:last-child {
   margin-right: 0;
@@ -2333,6 +2352,170 @@ a.news_item:hover .news_btn .circle {
   text-align: right;
 }
 
+/*購物車 付款方式*/
+.cart_form .payment {
+  background-color: #f2f2f2;
+  margin-bottom: 5rem;
+  border-top: 1px solid #ddd;
+}
+.cart_form .payment .list {
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+}
+.cart_form .payment .list input[type='radio'] {
+  display: none;
+}
+.cart_form .payment .list label {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.cart_form .payment .list label span.circle {
+  border: 1px solid #333;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+.cart_form .payment .list label span.circle::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  border-radius: 100%;
+  background-color: none;
+  margin: 2px;
+}
+.cart_form
+  .payment
+  .list
+  input[type='radio']:checked
+  + label
+  span.circle::before {
+  background-color: #ea756b;
+}
+.cart_form .payment .list img {
+  height: 27px;
+  margin-left: 10px;
+}
+
+/*購物車 配送資訊*/
+.cart_form .delivery .list > input[type='radio'] {
+  display: none;
+}
+.cart_form .delivery .list > label {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #b3b3b3;
+  padding: 10px 30px;
+}
+.cart_form .delivery .list > label span.circle {
+  border-radius: 100%;
+  margin-right: 8px;
+  background-color: #fff;
+}
+.cart_form .delivery .list > label span.circle::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  border-radius: 100%;
+  background-color: none;
+  margin: 2px;
+}
+.cart_form
+  .delivery
+  .list
+  > input[type='radio']:checked
+  + label
+  span.circle::before {
+  background-color: #ea756b;
+}
+.cart_form .delivery .list .content {
+  padding: 1.5rem 0;
+}
+.cart_form .delivery .list .content .input {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding-right: 2rem;
+}
+.cart_form .delivery .list .content .input label {
+  flex: 0 0 210px;
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+.cart_form .delivery .list .content .input input[type='text'] {
+  border: 1px solid #b3b3b3;
+  padding: 4px 10px;
+  border-radius: 5px;
+  outline: none;
+  flex: 1;
+  font-size: 0.9rem;
+}
+.cart_form .delivery .list .content .input select {
+  border: 1px solid #b3b3b3;
+  padding: 4px 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+.cart_form .delivery .list .content .bottom {
+  border-top: 1px solid #b3b3b3;
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+  font-size: 0.9rem;
+  padding-top: 10px;
+}
+.cart_form .delivery .list .content .bottom .check_box {
+  flex: 0 0 210px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cart_form .delivery .list .content .bottom .check_box input[type='checkbox'] {
+  display: none;
+}
+.cart_form .delivery .list .content .bottom .check_box label.square {
+  border: 1px solid #333;
+  display: inline-block;
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+.cart_form .delivery .list .content .bottom .check_box label.square::before {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: 2px;
+  background-color: none;
+}
+.cart_form
+  .delivery
+  .list
+  .content
+  .bottom
+  .check_box
+  input[type='checkbox']:checked
+  + label.square::before {
+  background-color: #ea756b;
+}
+.cart_form .delivery .list .content .bottom > label {
+  margin-bottom: 0;
+}
+
 @media (max-width: 992px) {
   .cart_form {
     padding: 15px;
@@ -2340,9 +2523,11 @@ a.news_item:hover .news_btn .circle {
   .cart_form .title {
     margin-bottom: 1rem;
   }
+  /*購物清單 標題*/
   .cart_form .head {
     display: none;
   }
+  /*購物商品清單*/
   .cart_form .body .list {
     flex-wrap: wrap;
   }
@@ -2360,14 +2545,10 @@ a.news_item:hover .news_btn .circle {
   .cart_form .body .m_total::before {
     content: '小計：';
   }
-  .cart_form .qty button.minus,
-  .cart_form .qty button.plus {
-    border-radius: unset;
-  }
   .cart_form .qty input[type='number'] {
     max-width: unset;
   }
-
+  /*購物清單 下半部*/
   .cart_form .foot {
     padding-bottom: 3rem;
   }
@@ -2381,44 +2562,26 @@ a.news_item:hover .news_btn .circle {
   .cart_form .foot .tr .td.operating {
     display: none;
   }
+
+  .cart_form .payment .list img{
+    height: 20px;
+  }
+
+  /*配送方式*/
+  .cart_form .delivery .list .content .input {
+    padding-right: 0;
+    flex-wrap: wrap;
+  }
+  .cart_form .delivery .list .content .input label {
+    flex: 0 0 110px;
+  }
+  .cart_form .delivery .list .content .input select{flex: 0 0 calc((100% - 120px) / 2 - 2.5px);}
+  .cart_form .delivery .list .content .input select:nth-child(3){margin-right: 0;}
+  .cart_form .delivery .list .content .input input.addr{margin-top: 1rem;flex: 0 0 calc(100% - 120px);margin-left: auto;}
+  .cart_form .delivery .list .content .bottom .check_box{flex: 0 0 110px;}
 }
 
-.cart_step {
-  display: flex;
-}
-.cart_step .back,
-.cart_step .next {
-  flex: 1;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.25rem;
-  line-height: 2.5;
-}
-.cart_step .back:hover,
-.cart_step .next:hover {
-  opacity: 0.8;
-}
-.cart_step .back {
-  background-color: #ea756b;
-}
-.cart_step .next {
-  background-color: #ac9b65;
-}
-.cart_step .go_index {
-  background-color: #ac9b65;
-  color: #fff;
-  margin-left: auto;
-  width: 165px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  font-size: 1.25rem;
-  margin-top: 3rem;
-}
-
+/*購物車 訂單資訊 配送方式和付款方式*/
 .cart_profile {
   display: flex;
   align-items: stretch;
@@ -2427,7 +2590,7 @@ a.news_item:hover .news_btn .circle {
 .cart_profile .payment {
   flex: 1;
   background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
   margin-top: 3rem;
 }
 .cart_profile .delivery {
@@ -2443,16 +2606,63 @@ a.news_item:hover .news_btn .circle {
   font-size: 1.15rem;
   margin-bottom: 0.5rem;
 }
-.cart_profile .delivery .title img,.cart_profile .payment .title img{
+.cart_profile .delivery .title img,
+.cart_profile .payment .title img {
   margin-right: 10px;
+  width: 25px;
 }
-.cart_profile .delivery .content .list,.cart_profile .payment .content .list{border-bottom: 1px solid #ccc;display: flex;padding-top: .5rem;}
-.cart_profile .delivery .content .list:last-child,.cart_profile .payment .content .list:last-child{border-bottom: none;}
-.cart_profile .delivery .content .list label,.cart_profile .payment .content .list label{flex: 0 0 130px;display: flex;justify-content: flex-end;margin-bottom: 0;font-weight: 500;}
-.cart_profile .delivery .content .list label span,.cart_profile .payment .content .list label span{flex: 0 0 80px;text-align: justify;overflow: hidden;height:1.5rem;font-size: .9rem;line-height: 1.5;color: #333;}
-.cart_profile .delivery .content .list label span::after,.cart_profile .payment .content .list label span::after{content: '';display: inline-block;width: 100%;}
-.cart_profile .delivery .content .list .text,.cart_profile .payment .content .list .text{font-weight: 500;}
-.cart_profile .delivery .content .list .text::before,.cart_profile .payment .content .list .text::before{content:'：';}
+.cart_profile .delivery .content,
+.cart_profile .payment .content {
+  padding-bottom: 1rem;
+}
+.cart_profile .delivery .content .list,
+.cart_profile .payment .content .list {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  padding: 0.5rem 0;
+  align-items: center;
+}
+.cart_profile .delivery .content .list:last-child,
+.cart_profile .payment .content .list:last-child {
+  border-bottom: none;
+}
+.cart_profile .delivery .content .list label,
+.cart_profile .payment .content .list label {
+  flex: 0 0 130px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.cart_profile .delivery .content .list label span,
+.cart_profile .payment .content .list label span {
+  flex: 0 0 80px;
+  text-align: justify;
+  overflow: hidden;
+  height: 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #333;
+}
+.cart_profile .delivery .content .list label span.no_justify,
+.cart_profile .payment .content .list label span.no_justify {
+  text-align: left;
+}
+.cart_profile .delivery .content .list label span::after,
+.cart_profile .payment .content .list label span::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.cart_profile .delivery .content .list .text,
+.cart_profile .payment .content .list .text {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.cart_profile .delivery .content .list .text::before,
+.cart_profile .payment .content .list .text::before {
+  content: '：';
+}
 @media (max-width: 992px) {
   .cart_profile {
     flex-wrap: wrap;
@@ -2461,7 +2671,56 @@ a.news_item:hover .news_btn .circle {
   .cart_profile .payment {
     flex: 0 0 100%;
   }
+  .cart_profile .delivery .content .list label, .cart_profile .payment .content .list label{
+    flex: 0 0 95px;
+  }
 }
+
+/*購物車 上下一步*/
+.cart_step {
+  display: flex;
+}
+.cart_step a:first-child {
+  border-right: 2px solid #fff;
+}
+.cart_step .red,
+.cart_step .brown {
+  flex: 1;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 2.5;
+}
+.cart_step .red:hover,
+.cart_step .brown:hover {
+  opacity: 0.8;
+}
+.cart_step .red {
+  background-color: #ea756b;
+}
+.cart_step .brown {
+  background-color: #ac9b65;
+}
+.cart_step .go_index {
+  background-color: #ac9b65;
+  color: #fff;
+  margin-left: auto;
+  width: 165px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+.cart_step .go_index:hover {
+  opacity: 0.8;
+}
+
+
 
 /*login*/
 .login-right .btn {
