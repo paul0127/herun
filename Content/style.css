@@ -1131,6 +1131,8 @@ footer .footer_bottom .social ul li a:hover {
 /*內頁共用框 上下距離*/
 .contain {
   padding: 3rem 0;
+  background-image: url(./img/index/728x401_底紋.png);
+  background-repeat: repeat;
 }
 @media (max-width: 992px) {
   .contain {
@@ -1263,12 +1265,14 @@ footer .footer_bottom .social ul li a:hover {
 .side_menu ul > li > label > span{
   flex: 0 0 145px;
   display: block;
+  text-align: justify;
+  height: 45px;
+  overflow: hidden;
 }
-.side_menu ul > li > label > span.space_1{
-  letter-spacing: 3px;
-}
-.side_menu ul > li > label > span.space_2{
-  letter-spacing: 16px;
+.side_menu ul > li > label > span::after{
+  content:'';
+  display: inline-block;
+  width: 100%;
 }
 .side_menu ul > li > ul{
   padding: 10px 0;
@@ -2213,70 +2217,68 @@ fieldset[disabled] .btn-fb.active {
 
 /*購物流程圖*/
 .stepwizard {
-  display: table;
+  display: flex;
   width: 100%;
   position: relative;
 }
-.stepwizard-row {
-  display: table-row;
-}
-
-.stepwizard-row:before {
-  top: 14px;
+.stepwizard:before {
+  top: 50%;
   bottom: 0;
   position: absolute;
   content: ' ';
   width: 100%;
-  height: 1px;
-  background-color: #ccc;
+  height: 2px;
+  background-color: #ac9b65;
   z-index: 0;
 }
 .stepwizard-step {
-  display: table-cell;
-  text-align: center;
+  flex: 1;
+  display: flex;
   position: relative;
+  justify-content: center;
 }
-.stepwizard-step p {
-  margin-top: 10px;
-}
-.stepwizard-step .btn-circle {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 15px;
-}
-
-.stepwizard-step a:hover {
-  background: #fff;
-  border-color: #ccc;
+.stepwizard-step a.btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  border: 2px solid #ac9b65;
+  background-color: #fff;
+  color: #ac9b65;
+  text-decoration: none;
   cursor: default;
 }
-
-.stepwizard-step.active a {
-  background: #b28146;
+.stepwizard-step.active a.btn {
+  background: #ea756b;
   color: #fff;
+}
+.stepwizard-step p {
+  position: absolute;
+  margin-top: 10px;
+  bottom: -100%;
 }
 
 /*購物車 付款頁面 框*/
 .form-box {
-  border: 1px solid #f2f2f2;
-  padding: 15px;
+  padding: 15px 30px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .order-title {
-  background: #f2f2f2;
-  color: #333;
-  padding: 15px;
+  background: #b3b3b3;
+  color: #fff;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
 }
+.order-title img{margin-right: 10px;}
 
 .shop-table-title {
-  color: #79ceb8;
+  color: #ac9b65;
   font-weight: 900;
-  border-bottom: 1px solid #f2f2f2;
   padding-bottom: 15px;
 }
 .shop-table-body {
@@ -2301,11 +2303,11 @@ fieldset[disabled] .btn-fb.active {
 }
 
 .page-heading {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 2px solid #e9e9e9;
   margin-top: 15px;
-  margin-bottom: 15px;
   height: 40px;
   position: relative;
+  text-align: center;
 }
 
 .page-heading.ms {
@@ -2320,7 +2322,6 @@ fieldset[disabled] .btn-fb.active {
 @media (min-width: 768px) {
   .page-heading {
     margin-top: 45px;
-    margin-bottom: 30px;
   }
 
   .page-heading.ms {
@@ -2330,9 +2331,10 @@ fieldset[disabled] .btn-fb.active {
 
 .page-heading-title {
   font-size: 24px;
-  border-bottom: 3px solid #b28146;
+  border-bottom: 3px solid #ea756b;
   line-height: 40px;
-  padding-bottom: 5px;
+  padding:0 5px 5px 5px;
+  font-weight: bold;
 }
 
 .back-btn,
