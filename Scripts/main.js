@@ -39,20 +39,27 @@ $(document).ready(function () {
 
   /*手機板選單 主選單 選單下部*/
   let m_menu = document.querySelector('nav').innerHTML
-  let m_menu_login = $('.login_btn').length ? document.querySelector('.toolbar li.login_btn').outerHTML : ''//抓取PC版 登入html
-  let m_menu_user = $('.user_btn').length ? document.querySelector('.toolbar li.user_btn').outerHTML : ''//抓取PC版 會員html
-  let m_menu_cart = $('.cart_btn').length ? document.querySelector('.toolbar li.cart_btn').outerHTML : ''//抓取PC版 購物車html
+  let m_menu_login = $('.login_btn').length
+    ? document.querySelector('.toolbar li.login_btn').outerHTML
+    : '' //抓取PC版 登入html
+  let m_menu_user = $('.user_btn').length
+    ? document.querySelector('.toolbar li.user_btn').outerHTML
+    : '' //抓取PC版 會員html
+  let m_menu_cart = $('.cart_btn').length
+    ? document.querySelector('.toolbar li.cart_btn').outerHTML
+    : '' //抓取PC版 購物車html
 
-  let m_menu_template = `<div class="mobile_menu">
-                            <div class="main">`+
-                            m_menu +
-                            `</div>
+  let m_menu_template =
+    `<div class="mobile_menu">
+                            <div class="main">` +
+    m_menu +
+    `</div>
                             <div class="bottom">
-                              <ul>`+
-                                m_menu_login+
-                                m_menu_user+
-                                m_menu_cart+
-                              `</ul>
+                              <ul>` +
+    m_menu_login +
+    m_menu_user +
+    m_menu_cart +
+    `</ul>
                             </div>
                           </div>`
   $('.top_main').prepend(m_menu_template)
@@ -146,7 +153,7 @@ $(window).scroll(function () {
 /*$(document).on('click', '.go_top', function () {
   $('html,body').animate({ scrollTop: 0 }, 900)
 })*/
-function go_top(){
+function go_top() {
   $('html,body').animate({ scrollTop: 0 }, 900)
 }
 
@@ -165,7 +172,7 @@ $(document).on('click', '.toolbar li.sub a', function () {
 
   $('.toolbar li.sub').removeClass('active')
   $('.search_bar').removeClass('active')
-  if(!t){
+  if (!t) {
     $(this.parentNode).addClass('active')
   }
 
@@ -182,7 +189,7 @@ $(document).on('click', '.mobile_menu .bottom li.sub > a', function () {
   let t = $(this.parentNode).hasClass('active')
 
   $('.mobile_menu .bottom li.sub').removeClass('active')
-  if(!t){
+  if (!t) {
     $(this.parentNode).addClass('active')
   }
 })
@@ -218,7 +225,7 @@ function menu_close_toggle() {
   $('.mobile_menu_close').removeClass('active')
   $('.search_bar').removeClass('active')
 })*/
-function menu_close(){
+function menu_close() {
   $('.mobile_nav').removeClass('active')
   $('.mobile_menu').removeClass('active')
   $('.mobile_menu_close').removeClass('active')
@@ -238,6 +245,25 @@ $(document).on('click', '.small_pic li', function () {
 
   let pic = $(this).data('img')
   $('.product_pic .main_pic')[0].setAttribute('src', pic)
+})
+
+/**/
+$(document).on('click', '.small_pic_nav div', function () {
+  let c = this.className
+  let x
+  console.log(c)
+  if (c !== 'next') {
+    x = document.querySelector('.small_pic li.active').previousElementSibling
+  } else {
+    x = document.querySelector('.small_pic li.active').nextElementSibling
+  }
+  if (x) {
+    $('.small_pic li').removeClass('active')
+    $(x).addClass('active')
+
+    let pic = $(x).data('img')
+    $('.product_pic .main_pic')[0].setAttribute('src', pic)
+  }
 })
 
 /*產品內頁 數量增加或減少 n為true=>增加 n為false=>減少*/
