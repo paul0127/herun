@@ -1805,13 +1805,17 @@ footer .footer_bottom .social ul li a:hover {
   .member_main .space {
     height: 1.5rem;
   }
+  .member_main .form {
+    width: 100%;
+  }
   .member_main .form .list .input {
     padding: 10px;
     flex-wrap: wrap;
+    flex:0 0 calc(100% - 110px)
   }
   .member_main .form .list .input input[type='text'],
   .member_main .form .list .input select {
-    flex: 1;
+    flex: 0 0 100%;
   }
   .member_main .form .list .input button.to_search {
     flex: 0 0 100%;
@@ -1895,13 +1899,22 @@ footer .footer_bottom .social ul li a:hover {
 .policy .banner img{max-width: 100%;}
 .policy .item{margin-bottom: 2rem;}
 .policy .item .title{background-color: #ac9b65;font-size: 1.75rem;text-align: center;color: #fff;font-weight: bold;}
-.policy .item .text{background-color: #fff;padding: 2rem 3rem;font-weight: 500;}
-.policy .item ul{list-style: none;padding-left: 0;}
-.policy .item ul li{display: flex;align-items: center;margin-bottom: 1rem;}
-.policy .item ul li img{width: 40px;margin-right: .75rem;}
+.policy .item .title.red{background-color: #ee736b;}
+.policy .item .text{background-color: #fff;padding: 2rem 8rem;font-weight: 700;font-size: 1rem;}
+.policy .item .text font.red{color: #ea756b;}
+.policy .item .text ul.icon_list{list-style: none;padding-left: 0;margin: 0 -3rem;}
+.policy .item .text ul.icon_list li{display: flex;align-items: center;margin-bottom: 1rem;}
+.policy .item .text ul.icon_list li img{width: 40px;margin-right: .75rem;}
+.policy .item .text ul.brown{padding-left: 0;color: #ac9b65;}
+.policy .item .text ul.red{padding-left: 0;color: #ea756b;}
+.policy .item .text ul.brown li span,.policy .item .text ul.red li span{color: #333;}
 .policy .list{margin-bottom: 1.5rem;}
 .policy .list:last-child{margin-bottom: 0;}
 .policy .list img{max-width: 100%;}
+@media (max-width: 992px) {
+  .policy .item .text{padding:1rem 2rem;}
+  .policy .item .text ul.icon_list{margin: 0 -1rem;}
+}
 
 /*左側垂直選單*/
 .side-menu,
