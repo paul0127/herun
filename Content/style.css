@@ -1879,6 +1879,19 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
+/*退換貨政策*/
+.policy .banner{margin-bottom: 3rem;}
+.policy .banner img{max-width: 100%;}
+.policy .item{margin-bottom: 2rem;}
+.policy .item .title{background-color: #ac9b65;font-size: 1.75rem;text-align: center;color: #fff;font-weight: bold;}
+.policy .item .text{background-color: #fff;padding: 2rem 3rem;font-weight: 500;}
+.policy .item ul{list-style: none;padding-left: 0;}
+.policy .item ul li{display: flex;align-items: center;margin-bottom: 1rem;}
+.policy .item ul li img{width: 40px;margin-right: .75rem;}
+.policy .list{margin-bottom: 1.5rem;}
+.policy .list:last-child{margin-bottom: 0;}
+.policy .list img{max-width: 100%;}
+
 /*左側垂直選單*/
 .side-menu,
 .side-menu-child,
@@ -2209,29 +2222,6 @@ footer .footer_bottom .social ul li a:hover {
 .product_desc .tab_panel.active {
   display: block;
 }
-/*推薦商品*/
-.relation {
-  margin-top: 2rem;
-}
-.relation .title_product {
-  margin-bottom: 2.5rem;
-}
-.relation .title_product h1 {
-  position: relative;
-}
-.relation .title_product h1::after {
-  content: '';
-  border-bottom: 3px solid #b28146;
-  width: 100%;
-  display: block;
-  position: absolute;
-  bottom: 0.1.5px;
-  left: 0;
-}
-.relation .title_product::after {
-  display: none;
-}
-
 @media (max-width: 992px) {
   .product_top {
     display: flex;
