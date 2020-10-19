@@ -1896,7 +1896,7 @@ footer .footer_bottom .social ul li a:hover {
 
 /*政策*/
 .policy .banner{margin-bottom: 3rem;}
-.policy .banner img{max-width: 100%;}
+.policy .banner img{width: 100%;}
 .policy .item{margin-bottom: 2rem;}
 .policy .item .title{background-color: #ac9b65;font-size: 1.75rem;text-align: center;color: #fff;font-weight: bold;}
 .policy .item .title.red{background-color: #ee736b;}
