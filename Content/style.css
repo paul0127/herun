@@ -1912,6 +1912,7 @@ footer .footer_bottom .social ul li a:hover {
 .policy .list:last-child{margin-bottom: 0;}
 .policy .list img{max-width: 100%;}
 @media (max-width: 992px) {
+  .policy .item .title{font-size: 1.5rem;}
   .policy .item .text{padding:1rem 2rem;}
   .policy .item .text ul.icon_list{margin: 0 -1rem;}
 }
