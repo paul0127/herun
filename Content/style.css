@@ -1233,9 +1233,7 @@ footer .footer_bottom .social ul li a:hover {
 }
 
 @media (max-width: 992px) {
-  .pager_nav {
-    display: none;
-  }
+
 }
 
 /*最新消息內頁 上下頁按鈕*/
@@ -1266,6 +1264,7 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
+/*用戶體驗*/
 .experience {
   padding: 0 2.75rem;
   display: flex;
@@ -1323,7 +1322,7 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
-/*消息內頁*/
+/*用戶體驗內頁*/
 .experience_info {
   width: 670px;
   max-width: 100%;
@@ -1372,6 +1371,7 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
+/*最新消息 產品消息 tap切換*/
 .top_tap {
   display: flex;
   justify-content: center;
@@ -1464,6 +1464,55 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
+/*消息內頁*/
+.news_info {
+  width: 494px;
+  max-width: 100%;
+  margin: 3.25rem auto;
+}
+.news_info .img {
+  margin-bottom: 3.25rem;
+}
+.news_info .img img {
+  max-width: 100%;
+}
+.news_info .title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3.25rem;
+}
+.news_info .time {
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+  margin-bottom: 3.25rem;
+  border-bottom: 1px solid #707070;
+}
+.news_info .editor p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+  .news_info {
+    width: 100%;
+    max-width: 750px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .news_info .img {
+    margin-bottom: 1.25rem;
+  }
+  .news_info .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .news_info .time {
+    margin-bottom: 1.25rem;
+  }
+}
+
 /*會員上下框架*/
 .member_contain {
   padding-top: 3rem;
@@ -1481,7 +1530,7 @@ footer .footer_bottom .social ul li a:hover {
   align-items: stretch;
 }
 
-/*側邊攔*/
+/*會員側邊攔*/
 .side_menu {
   width: 244px;
   margin-right: 20px;
@@ -1588,7 +1637,7 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
-/*會員主要內容*/
+/*會員主要內容框架*/
 .member_main {
   flex: 1;
 }
@@ -1845,56 +1894,7 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
-/*消息內頁*/
-.news_info {
-  width: 494px;
-  max-width: 100%;
-  margin: 3.25rem auto;
-}
-.news_info .img {
-  margin-bottom: 3.25rem;
-}
-.news_info .img img {
-  max-width: 100%;
-}
-.news_info .title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 3.25rem;
-}
-.news_info .time {
-  font-size: 0.9rem;
-  padding-bottom: 10px;
-  margin-bottom: 3.25rem;
-  border-bottom: 1px solid #707070;
-}
-.news_info .editor p {
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: justify;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 992px) {
-  .news_info {
-    width: 100%;
-    max-width: 750px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-  .news_info .img {
-    margin-bottom: 1.25rem;
-  }
-  .news_info .title {
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
-  }
-  .news_info .time {
-    margin-bottom: 1.25rem;
-  }
-}
-
-/*退換貨政策*/
+/*政策*/
 .policy .banner{margin-bottom: 3rem;}
 .policy .banner img{max-width: 100%;}
 .policy .item{margin-bottom: 2rem;}
@@ -1995,7 +1995,7 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
-/**/
+/*產品篩選下拉*/
 .filter {
   margin-top: -2.5rem;
   margin-bottom: 2.5rem;
@@ -2014,6 +2014,10 @@ footer .footer_bottom .social ul li a:hover {
   .filter {
     margin-top: -1.5rem;
     margin-bottom: 1.5rem;
+  }
+  .filter select{
+    width: 120px;
+    font-size: 1rem;
   }
 }
 
@@ -3011,13 +3015,6 @@ fieldset[disabled] .btn-fb.active {
   border-color: #b28146;
   background-color: #b28146;
   color: white;
-}
-
-.policy h4 {
-  color: #b28146;
-  font-weight: 800;
-  border-bottom-style: inset;
-  border-bottom-color: #b28146;
 }
 
 .log-in,
