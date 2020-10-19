@@ -2314,7 +2314,7 @@ footer .footer_bottom .social ul li a:hover {
   position: relative;
   justify-content: center;
 }
-.stepwizard-step a.btn {
+.stepwizard-step span.i_btn {
   width: 40px;
   height: 40px;
   display: flex;
@@ -2327,9 +2327,11 @@ footer .footer_bottom .social ul li a:hover {
   text-decoration: none;
   cursor: default;
 }
-.stepwizard-step.active a.btn {
+.stepwizard-step.active span.i_btn {
   background: #ea756b;
   color: #fff;
+  outline: none;
+  box-shadow: unset;
 }
 .stepwizard-step p {
   position: absolute;
@@ -2340,7 +2342,7 @@ footer .footer_bottom .social ul li a:hover {
   .stepwizard {
     margin-bottom: 3rem;
   }
-  .stepwizard-step a.btn {
+  .stepwizard-step span.i_btn {
     width: 30px;
     height: 30px;
     font-size: 1rem;
