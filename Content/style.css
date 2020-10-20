@@ -2317,6 +2317,13 @@ footer .footer_bottom .social ul li a:hover {
   margin-bottom: 0.75rem;
   max-width: 100%;
 }
+.editor .list{display: flex;align-items: center;margin-bottom: 2rem;}
+.editor .list .text{padding: 1rem;}
+@media (max-width: 992px) {
+  .editor .list{flex-wrap: wrap;}
+  .editor .list img{order: 1;flex: 0 0 100%;}
+  .editor .list .text{order: 2;flex: 0 0 100%;padding:.5rem 0 .75rem 0;}
+}
 
 /*產品內頁*/
 /*產品內頁 產品上半部 產品圖片及右側產品描述*/
@@ -2360,12 +2367,12 @@ footer .footer_bottom .social ul li a:hover {
 .product_top .small_pic .small_pic_nav {
   position: absolute;
   top: 50%;
-  transform: translateY(-25px);
+  transform: translateY(-50px);
   width: 100%;
   height: 0;
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 4rem;
   color: #ccc;
   padding: 0 3%;
 }
