@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         type: 'tabs',
         content: [
-          '<a href="#panel-menu"> <span>主選單</span></a>',
-          '<a href="#panel-cart"> <span>購物車</span></a>',
+          '<a href="#panel_menu"> <span>主選單</span></a>',
+          '<a href="#panel_cart"> <span>購物車</span></a>',
         ],
       },
       {
