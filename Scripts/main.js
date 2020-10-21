@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     counters: true,
     navbar: {
       title: "主選單"
-  },
+    },
     navbars: [
       {
         type: 'tabs',
