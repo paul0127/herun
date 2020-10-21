@@ -192,13 +192,6 @@ header {
   transform: scaleX(1) rotate(-45deg);
 }
 
-.mm-navbar > * {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  width: 50%;
-}
-
 /*手機購物車*/
 .mobile_cart {
   padding: 15px 10px;
