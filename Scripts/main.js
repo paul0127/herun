@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setSelected: true,
     counters: true,
     navbar: {
-      title: '主選單',
+      title: '選單',
     },
     navbars: [
       {

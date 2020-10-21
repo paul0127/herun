@@ -202,7 +202,6 @@ header {
 /*手機購物車*/
 .mobile_cart {
   padding: 15px 10px;
-  min-height: calc(100% - 44px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
