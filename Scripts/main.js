@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     extensions: ['pagedim-black', 'theme-dark'],
     setSelected: true,
     counters: true,
+    navbar: {
+      title: "主選單"
+  },
     navbars: [
       {
         type: 'tabs',
