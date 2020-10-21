@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
           '<a href="#panel_menu"> <span>主選單</span></a>',
           '<a href="#panel_cart"> <span>購物車</span></a>',
         ],
-      }
+      },
+      {
+        content: ['prev', 'breadcrumbs', 'close'],
+      },
     ],
   })
 })
