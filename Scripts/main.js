@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setSelected: true,
     counters: true,
     navbar: {
-      title: "主選單"
+      title: '主選單',
     },
     navbars: [
       {
@@ -36,10 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
           '<a href="#panel_menu"> <span>主選單</span></a>',
           '<a href="#panel_cart"> <span>購物車</span></a>',
         ],
-      },
-      {
-        content: ['prev', 'breadcrumbs', 'close'],
-      },
+      }
     ],
   })
 })

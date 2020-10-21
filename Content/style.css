@@ -192,6 +192,13 @@ header {
   transform: scaleX(1) rotate(-45deg);
 }
 
+.mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened~.mm-slideout{
+  -webkit-transform: translate3d(350px,0,0);
+  transform: translate3d(350px,0,0);
+}
+.mm-menu_offcanvas{width: 350px !important;}
+.mm-menu .mm-navbar_tabs a{background-color: #2e2e2e;}
+.mm-menu .mm-navbar_tabs a.mm-navbar__tab_selected{background-color: #333;}
 /*手機購物車*/
 .mobile_cart {
   padding: 15px 10px;
@@ -203,9 +210,7 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  
 }
 .mobile_cart .mobile_cart_top .list {
   border-bottom: 1px solid #fff;
@@ -3352,8 +3357,8 @@ footer .footer_bottom .social ul li a:hover {
   }
   .cart_form .delivery .list .content .input input[type='text'] {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(100% - 125px);
-    flex: 0 0 calc(100% - 125px);
+    -ms-flex: 0 0 calc(100% - 122px);
+    flex: 0 0 calc(100% - 122px);
     margin-left: auto;
   }
   .cart_form .delivery .list .content .input input.addr {
