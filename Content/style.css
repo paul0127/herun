@@ -1603,34 +1603,7 @@ footer .footer_bottom .social ul li a:hover {
     flex-wrap: wrap;
   }
   .side_menu {
-    flex: 0 0 100%;
-    margin-bottom: 1rem;
-    margin-right: 0;
-    position: relative;
-  }
-  .side_menu .side_menu_toggle {
-    display: block;
-  }
-  .side_menu .side_menu_toggle::before {
-    content: '開啟次選單';
-  }
-  .side_menu.active .side_menu_toggle::before {
-    content: '關閉次選單';
-  }
-  .side_menu > ul {
-    min-height: unset;
-    height: auto;
-    width: 100%;
-    border-radius: unset;
-    border: 1px solid #eee;
-    border-top: none;
     display: none;
-  }
-  .side_menu.active > ul {
-    display: block;
-  }
-  .side_menu ul > li > label {
-    border-radius: unset;
   }
 }
 

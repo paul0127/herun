@@ -20,6 +20,27 @@ window.fbAsyncInit = function () {
   fjs.parentNode.insertBefore(js, fjs)
 })(document, 'script', 'facebook-jssdk')
 
+/*手機版menu*/
+document.addEventListener('DOMContentLoaded', () => {
+  new Mmenu('#mobile_menu', {
+    extensions: ['pagedim-black', 'theme-dark'],
+    setSelected: true,
+    counters: true,
+    navbars: [
+      {
+        type: 'tabs',
+        content: [
+          '<a href="#panel-menu"> <span>主選單</span></a>',
+          '<a href="#panel-cart"> <span>購物車</span></a>',
+        ],
+      },
+      {
+        content: ['prev', 'breadcrumbs', 'close'],
+      },
+    ],
+  })
+})
+
 $(document).ready(function () {
   /*產生選單、搜尋開啟遮幕*/
   let close = `<div class="mobile_menu_close" onclick="javascript:menu_close()"></div>`
@@ -28,41 +49,6 @@ $(document).ready(function () {
   /*向上滑到頂*/
   let goTop = `<div class="go_top" onclick="javascript:go_top()"></div>`
   $('body').prepend(goTop)
-
-  /*手機版選單按鈕*/
-  let m_nav = `<div class="mobile_nav">
-                <span></span>
-                <span></span>
-                <span></span>
-                </div>`
-  $('.top_main').prepend(m_nav)
-
-  /*手機板選單 主選單 選單下部*/
-  let m_menu = document.querySelector('nav').innerHTML
-  let m_menu_login = $('.login_btn').length
-    ? document.querySelector('.toolbar li.login_btn').outerHTML
-    : '' //抓取PC版 登入html
-  let m_menu_user = $('.user_btn').length
-    ? document.querySelector('.toolbar li.user_btn').outerHTML
-    : '' //抓取PC版 會員html
-  let m_menu_cart = $('.cart_btn').length
-    ? document.querySelector('.toolbar li.cart_btn').outerHTML
-    : '' //抓取PC版 購物車html
-
-  let m_menu_template =
-    `<div class="mobile_menu">
-                            <div class="main">` +
-    m_menu +
-    `</div>
-                            <div class="bottom">
-                              <ul>` +
-    m_menu_login +
-    m_menu_user +
-    m_menu_cart +
-    `</ul>
-                            </div>
-                          </div>`
-  $('.top_main').prepend(m_menu_template)
 
   /*首頁banner輪播*/
   if ($('.banner_slider').length) {
@@ -158,13 +144,13 @@ function go_top() {
 }
 
 /*手機選單開啟關閉*/
-$(document).on('click', '.mobile_nav', function () {
+/*$(document).on('click', '.mobile_nav', function () {
   $('.mobile_nav').toggleClass('active')
   $('.mobile_menu').toggleClass('active')
   $('.search_bar').removeClass('active')
 
   menu_close_toggle()
-})
+})*/
 
 /*pc版會員、購物車選單開啟關閉*/
 $(document).on('click', '.toolbar li.sub a', function () {
@@ -177,21 +163,6 @@ $(document).on('click', '.toolbar li.sub a', function () {
   }
 
   menu_close_toggle()
-})
-
-/*手機版子選單開關*/
-$(document).on('click', '.mobile_menu .main li.sub > a', function () {
-  $(this.parentNode).toggleClass('active')
-})
-
-/*手機版會員、購物車選單開啟關閉*/
-$(document).on('click', '.mobile_menu .bottom li.sub > a', function () {
-  let t = $(this.parentNode).hasClass('active')
-
-  $('.mobile_menu .bottom li.sub').removeClass('active')
-  if (!t) {
-    $(this.parentNode).addClass('active')
-  }
 })
 
 /*搜尋bar開啟關閉*/
@@ -247,7 +218,7 @@ $(document).on('click', '.small_pic li', function () {
   $('.product_pic .main_pic')[0].setAttribute('src', pic)
 })
 
-/**/
+/*產品內頁 圖片切換*/
 $(document).on('click', '.small_pic_nav div', function () {
   let c = this.className
   let x

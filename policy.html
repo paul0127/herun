@@ -5,227 +5,338 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>退換貨政策</title>
     <link rel="stylesheet" href="./Content/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./Content/mmenu.css" />
     <link rel="stylesheet" href="./Content/style.css" />
   </head>
   <body>
-    <!--頁首-->
-    <header>
-      <div class="container">
-        <div class="top_main">
-          <!--logo-->
-          <div class="logo">
-            <a href="./"
-              ><img src="./Content/img/index/223x65_上bar_logo.png"
-            /></a>
-          </div>
-          <!--PC選單-->
-          <nav>
-            <ul>
-              <li><a href="#">合潤介紹</a></li>
-              <li><a href="#">品牌介紹</a></li>
-              <li><a href="experience.html">使用者體驗</a></li>
-              <li class="sub">
-                <a href="#">最新消息</a>
-                <div class="sub_menu">
-                  <ul>
-                    <li><a href="news.html">最新動態</a></li>
-                    <li><a href="product_news.html">產品消息</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="product_list.html">合潤購物中心</a></li>
-              <li class="sub">
-                <a href="#">常見問題</a>
-                <div class="sub_menu">
-                  <ul>
-                    <li><a href="notice.html">購物須知</a></li>
-                    <li><a href="policy.html">退換貨政策</a></li>
-                    <li><a href="upgrade.html">會員升級</a></li>
-                    <li><a href="#">聯絡我們</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          <!--會員登入 搜尋icon-->
-          <div class="toolbar">
-            <ul>
-              <li class="login_btn">
-                <a href="#">登入</a>
-              </li>
-              <li class="search_btn">
-                <img src="./Content/img/index/22x22_上bar_icon.png" />
-              </li>
-              <li class="user_btn sub">
-                <a href="javascript:void(0)"
-                  ><img src="./Content/img/index/20x20_上bar_icon.png"
-                /></a>
-                <div class="sub_menu">
-                  <ul>
-                    <li><a href="information.html">會員資料</a></li>
-                    <li><a href="notice.html">購物須知</a></li>
-                    <li><a href="order.html">訂單查詢</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="cart_btn sub">
-                <a href="javascript:void(0)"
-                  ><img src="./Content/img/index/24x21_上bar_icon.png" /><span
-                    >0</span
-                  ></a
-                >
-                <div class="sub_menu">
-                  <ul>
-                    <li>
-                      <div class="name">商品名稱</div>
-                      <div class="price">$8,320</div>
-                    </li>
-                    <li>
-                      <div class="name">商品名稱</div>
-                      <div class="price">$8,320</div>
-                    </li>
-                  </ul>
-                  <div class="total">總計 $8,320</div>
-                  <div class="cart_in_btn">
-                    <a href="cart.html">立即結帳</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!--彈出搜尋bar-->
-          <div class="search_bar">
-            <div class="container">
-              <form class="search_inner" action="/search" method="get">
-                <input type="text" name="search" placeholder="請輸入關鍵字" />
-                <button>搜尋</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="contain">
-      <div class="container">
-        <div class="bread">
-          <ul>
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">常見問題</a></li>
-            <li>退換貨政策</li>
-          </ul>
-        </div>
-        <div class="b_title">退換貨政策</div>
-      </div>
-      <div class="policy">
-        <div class="banner">
-          <img src="./Content/img/policy/退換貨政策_BANNER-01.jpg" />
-        </div>
+    <div>
+      <!--頁首-->
+      <header>
         <div class="container">
-          <div class="item">
-            <div class="title">七天鑑賞期服務</div>
-            <div class="text">
-              根據消費者保護法之規定·合潤國際官網提供您商品到貨七天猶豫期随時解約退貨之權益·且無須自行額外負擔退貨運費。<br />
-              ※請注意:<font class="red">七天鑑賞期服務非試用期</font>退回時商品必須為全新且完整包裝(包含:商品本身、銷貨文件等)
+          <div class="top_main">
+            <!--手機選單按鈕-->
+            <div class="mobile_nav">
+              <a href="#mobile_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
             </div>
-          </div>
-          <div class="item">
-            <div class="title">退換貨流程須知</div>
-            <div class="text">
-              <ul class="icon_list">
-                <li>
-                  <img src="./Content/img/policy/退換貨流程須知_ICON-01.png" />
-                  <span
-                    >辦理退換貨需來電告知客服人員(自收到商品後七日內辦理)如因個人因素退貨次數過多·本公司將依據服務條款·暫停或終止您全部或部份的購物與服務資格·敬請見諒。</span
-                  >
+            <!--logo-->
+            <div class="logo">
+              <a href="./"
+                ><img src="./Content/img/index/223x65_上bar_logo.png"
+              /></a>
+            </div>
+            <!--PC選單-->
+            <nav>
+              <ul>
+                <li><a href="#">合潤介紹</a></li>
+                <li><a href="#">品牌介紹</a></li>
+                <li><a href="experience.html">使用者體驗</a></li>
+                <li class="sub">
+                  <a href="#">最新消息</a>
+                  <div class="sub_menu">
+                    <ul>
+                      <li><a href="news.html">最新動態</a></li>
+                      <li><a href="product_news.html">產品消息</a></li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <img src="./Content/img/policy/退換貨流程須知_ICON-02.png" />
-                  <span>瑩幕色差並不屬於瑕疵。</span>
+                <li><a href="product_list.html">合潤購物中心</a></li>
+                <li class="sub">
+                  <a href="#">常見問題</a>
+                  <div class="sub_menu">
+                    <ul>
+                      <li><a href="notice.html">購物須知</a></li>
+                      <li><a href="policy.html">退換貨政策</a></li>
+                      <li><a href="upgrade.html">會員升級</a></li>
+                      <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <img src="./Content/img/policy/退換貨流程須知_ICON-03.png" />
-                  <span
-                    >單筆訂單僅受理一次來回退貨服務·如有贈品、發票須連同商品一併退回,</span
-                  >
+              </ul>
+            </nav>
+            <!--會員登入 搜尋icon-->
+            <div class="toolbar">
+              <ul>
+                <li class="login_btn">
+                  <a href="#">登入</a>
                 </li>
-                <li>
-                  <img src="./Content/img/policy/退換貨流程須知_ICON-04.png" />
-                  <span
-                    >為節省您更換商品的等候時間·全面採用只退不換的方式·若您有換貨需求·請辦理退貨後·重新下單訂購。</span
-                  >
+                <li class="search_btn">
+                  <img src="./Content/img/index/22x22_上bar_icon.png" />
                 </li>
-                <li>
-                  <img src="./Content/img/policy/退換貨流程須知_ICON-05.png" />
-                  <span
-                    >本公司收到您所退回的商品後·退貨處理作業時間約5-7個工作天·作業完成確認無誤後將於7個工作天内為您辦理退款。</span
-                  >
+                <li class="user_btn sub">
+                  <a href="javascript:void(0)"
+                    ><img src="./Content/img/index/20x20_上bar_icon.png"
+                  /></a>
+                  <div class="sub_menu">
+                    <ul>
+                      <li><a href="information.html">會員資料</a></li>
+                      <li><a href="notice.html">購物須知</a></li>
+                      <li><a href="order.html">訂單查詢</a></li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <img src="./Content/img/policy/退換貨流程須知_ICON-06.png" />
-                  <span
-                    >退款方式將比照原訂單付款方式·信用卡退刷時間會受個人信用卡結帳週期影響負項金額可能會落在下期信用卡帳單上請您留意下
-                    期信用卡帳單·或向您的信用卡發卡銀行洽詢。</span
+                <li class="cart_btn sub">
+                  <a href="javascript:void(0)"
+                    ><img src="./Content/img/index/24x21_上bar_icon.png" /><span
+                      >0</span
+                    ></a
                   >
+                  <div class="sub_menu">
+                    <ul>
+                      <li>
+                        <div class="name">商品名稱</div>
+                        <div class="price">$8,320</div>
+                      </li>
+                      <li>
+                        <div class="name">商品名稱</div>
+                        <div class="price">$8,320</div>
+                      </li>
+                    </ul>
+                    <div class="total">總計 $8,320</div>
+                    <div class="cart_in_btn">
+                      <a href="cart.html">立即結帳</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
+            <!--彈出搜尋bar-->
+            <div class="search_bar">
+              <div class="container">
+                <form class="search_inner" action="/search" method="get">
+                  <input type="text" name="search" placeholder="請輸入關鍵字" />
+                  <button>搜尋</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </header>
 
-    <!--頁尾-->
-    <footer>
-      <div class="container">
-        <div class="footer_content">
-          <div class="footer_logo">
-            <a href="#"
-              ><img src="./Content/img/index/276x93_下bar_logo.png"
-            /></a>
-          </div>
-          <div class="footer_link">
+      <div class="contain">
+        <div class="container">
+          <div class="bread">
             <ul>
-              <li><a href="#">合潤介紹</a></li>
-              <li><a href="news.html">招募夥伴與徵才</a></li>
-              <li><a href="#">品牌介紹</a></li>
-              <li><a href="news.html">最新消息</a></li>
-              <li><a href="product_list.html">合潤購物中心</a></li>
-              <li><a href="#">聯絡我們</a></li>
-              <li><a href="privacy.html">隱私權聲明</a></li>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">常見問題</a></li>
+              <li>退換貨政策</li>
             </ul>
           </div>
-          <div class="footer_bottom">
-            <div class="contact">
-              <div>客服專線 07-345-0401</div>
-              <div>傳真 07-556-5126</div>
-              <div>地址 80466 台灣高雄市鼓山區博愛一路534號8樓之2</div>
-              <div>E-MAIL service.tw@twherun.com</div>
+          <div class="b_title">退換貨政策</div>
+        </div>
+        <div class="policy">
+          <div class="banner">
+            <img src="./Content/img/policy/退換貨政策_BANNER-01.jpg" />
+          </div>
+          <div class="container">
+            <div class="item">
+              <div class="title">七天鑑賞期服務</div>
+              <div class="text">
+                根據消費者保護法之規定·合潤國際官網提供您商品到貨七天猶豫期随時解約退貨之權益·且無須自行額外負擔退貨運費。<br />
+                ※請注意:<font class="red">七天鑑賞期服務非試用期</font
+                >退回時商品必須為全新且完整包裝(包含:商品本身、銷貨文件等)
+              </div>
             </div>
-            <div class="social">
-              <ul>
-                <li>
-                  <a href="#"
-                    ><img src="./Content/img/index/41x41_下barfb_icon.png"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./Content/img/index/41x41_下baryu_icon.png"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./Content/img/index/41x41_下barline_icon.png"
-                  /></a>
-                </li>
-              </ul>
+            <div class="item">
+              <div class="title">退換貨流程須知</div>
+              <div class="text">
+                <ul class="icon_list">
+                  <li>
+                    <img
+                      src="./Content/img/policy/退換貨流程須知_ICON-01.png"
+                    />
+                    <span
+                      >辦理退換貨需來電告知客服人員(自收到商品後七日內辦理)如因個人因素退貨次數過多·本公司將依據服務條款·暫停或終止您全部或部份的購物與服務資格·敬請見諒。</span
+                    >
+                  </li>
+                  <li>
+                    <img
+                      src="./Content/img/policy/退換貨流程須知_ICON-02.png"
+                    />
+                    <span>瑩幕色差並不屬於瑕疵。</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./Content/img/policy/退換貨流程須知_ICON-03.png"
+                    />
+                    <span
+                      >單筆訂單僅受理一次來回退貨服務·如有贈品、發票須連同商品一併退回,</span
+                    >
+                  </li>
+                  <li>
+                    <img
+                      src="./Content/img/policy/退換貨流程須知_ICON-04.png"
+                    />
+                    <span
+                      >為節省您更換商品的等候時間·全面採用只退不換的方式·若您有換貨需求·請辦理退貨後·重新下單訂購。</span
+                    >
+                  </li>
+                  <li>
+                    <img
+                      src="./Content/img/policy/退換貨流程須知_ICON-05.png"
+                    />
+                    <span
+                      >本公司收到您所退回的商品後·退貨處理作業時間約5-7個工作天·作業完成確認無誤後將於7個工作天内為您辦理退款。</span
+                    >
+                  </li>
+                  <li>
+                    <img
+                      src="./Content/img/policy/退換貨流程須知_ICON-06.png"
+                    />
+                    <span
+                      >退款方式將比照原訂單付款方式·信用卡退刷時間會受個人信用卡結帳週期影響負項金額可能會落在下期信用卡帳單上請您留意下
+                      期信用卡帳單·或向您的信用卡發卡銀行洽詢。</span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+
+      <!--頁尾-->
+      <footer>
+        <div class="container">
+          <div class="footer_content">
+            <div class="footer_logo">
+              <a href="#"
+                ><img src="./Content/img/index/276x93_下bar_logo.png"
+              /></a>
+            </div>
+            <div class="footer_link">
+              <ul>
+                <li><a href="#">合潤介紹</a></li>
+                <li><a href="news.html">招募夥伴與徵才</a></li>
+                <li><a href="#">品牌介紹</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="product_list.html">合潤購物中心</a></li>
+                <li><a href="#">聯絡我們</a></li>
+                <li><a href="privacy.html">隱私權聲明</a></li>
+              </ul>
+            </div>
+            <div class="footer_bottom">
+              <div class="contact">
+                <div>客服專線 07-345-0401</div>
+                <div>傳真 07-556-5126</div>
+                <div>地址 80466 台灣高雄市鼓山區博愛一路534號8樓之2</div>
+                <div>E-MAIL service.tw@twherun.com</div>
+              </div>
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="./Content/img/index/41x41_下barfb_icon.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./Content/img/index/41x41_下baryu_icon.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./Content/img/index/41x41_下barline_icon.png"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <nav id="mobile_menu">
+      <div id="panel-menu">
+        <ul>
+          <li><a href="/">回到首頁</a></li>
+          <li><a href="#">合潤介紹</a></li>
+          <li><a href="#">品牌介紹</a></li>
+          <li><a href="#">使用者體驗</a></li>
+          <li>
+            <span>最新消息</span>
+            <ul>
+              <li><a href="news.html">最新動態</a></li>
+              <li><a href="product_news.html">產品消息</a></li>
+            </ul>
+          </li>
+          <li><a href="product_list.html">合潤購物中心</a></li>
+          <li>
+            <span>常見問題</span>
+            <ul>
+              <li><a href="notice.html">購物須知</a></li>
+              <li><a href="policy.html">退換貨政策</a></li>
+              <li><a href="upgrade.html">會員升級</a></li>
+              <li><a href="#">聯絡我們</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>會員中心</span>
+            <ul>
+              <li>
+                <span>業績與獎金查詢</span>
+                <ul>
+                  <li><a href="performance.html">組織業績表</a></li>
+                  <li><a href="rank.html">組織管理</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>個人帳戶管理</span>
+                <ul>
+                  <li><a href="performance.html">帳戶管理</a></li>
+                  <li><a href="#">個人獎金</a></li>
+                  <li><a href="#">購物金</a></li>
+                  <li><a href="#">撥款明細</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>訂單相關查詢</span>
+                <ul>
+                  <li><a href="order.html">訂單查詢</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>訊息中心</span>
+                <ul>
+                  <li><a href="#">訊息中心</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>相關下載</span>
+                <ul>
+                  <li><a href="dowload.html">檔案下檔</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="panel-cart">
+        <div>
+          <div>
+            <div class="name">商品名稱</div>
+            <div class="price">$8,320</div>
+          </div>
+          <div>
+            <div class="name">商品名稱</div>
+            <div class="price">$8,320</div>
+          </div>
+        </div>
+        <div class="total">總計 $8,320</div>
+        <div class="cart_in_btn">
+          <a href="cart.html">立即結帳</a>
+        </div>
+      </div>
+    </nav>
     <script src="./Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./Scripts/mmenu.js"></script>
     <script src="./Scripts/main.js"></script>
   </body>
 </html>

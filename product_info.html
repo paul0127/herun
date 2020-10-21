@@ -5,358 +5,459 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>商品名稱</title>
     <link rel="stylesheet" href="./Content/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./Content/mmenu.css" />
     <link rel="stylesheet" href="./Content/style.css" />
   </head>
   <body>
-    <!--頁首-->
-    <header>
-      <div class="container">
-        <div class="top_main">
-          <!--logo-->
-          <div class="logo">
-            <a href="./"
-              ><img src="./Content/img/index/223x65_上bar_logo.png"
-            /></a>
-          </div>
-          <!--PC選單-->
-          <nav>
-            <ul>
-              <li><a href="#">合潤介紹</a></li>
-              <li><a href="#">品牌介紹</a></li>
-              <li><a href="experience.html">使用者體驗</a></li>
-              <li class="sub">
-                <a href="#">最新消息</a>
-                <div class="sub_menu">
-                  <ul>
-                    <li><a href="news.html">最新動態</a></li>
-                    <li><a href="product_news.html">產品消息</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="product_list.html">合潤購物中心</a></li>
-              <li class="sub">
-                <a href="#">常見問題</a>
-                <div class="sub_menu">
-                  <ul>
-                    <li><a href="notice.html">購物須知</a></li>
-                    <li><a href="policy.html">退換貨政策</a></li>
-                    <li><a href="upgrade.html">會員升級</a></li>
-                    <li><a href="#">聯絡我們</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          <!--會員登入 搜尋icon-->
-          <div class="toolbar">
-            <ul>
-              <li class="login_btn">
-                <a href="#">登入</a>
-              </li>
-              <li class="search_btn">
-                <img src="./Content/img/index/22x22_上bar_icon.png" />
-              </li>
-              <li class="user_btn sub">
-                <a href="javascript:void(0)"
-                  ><img src="./Content/img/index/20x20_上bar_icon.png"
-                /></a>
-                <div class="sub_menu">
-                  <ul>
-                    <li><a href="information.html">會員資料</a></li>
-                    <li><a href="notice.html">購物須知</a></li>
-                    <li><a href="order.html">訂單查詢</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="cart_btn sub">
-                <a href="javascript:void(0)"
-                  ><img src="./Content/img/index/24x21_上bar_icon.png" /><span
-                    >0</span
-                  ></a
-                >
-                <div class="sub_menu">
-                  <ul>
-                    <li>
-                      <div class="name">商品名稱</div>
-                      <div class="price">$8,320</div>
-                    </li>
-                    <li>
-                      <div class="name">商品名稱</div>
-                      <div class="price">$8,320</div>
-                    </li>
-                  </ul>
-                  <div class="total">總計 $8,320</div>
-                  <div class="cart_in_btn">
-                    <a href="cart.html">立即結帳</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!--彈出搜尋bar-->
-          <div class="search_bar">
-            <div class="container">
-              <form class="search_inner" action="/search" method="get">
-                <input type="text" name="search" placeholder="請輸入關鍵字" />
-                <button>搜尋</button>
-              </form>
+    <div>
+      <!--頁首-->
+      <header>
+        <div class="container">
+          <div class="top_main">
+            <!--手機選單按鈕-->
+            <div class="mobile_nav">
+              <a href="#mobile_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="contain">
-      <!-- 麵包屑路徑 -->
-      <div class="container">
-        <div class="bread">
-          <ul>
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">合潤購物中心</a></li>
-            <li>合潤購物中心列表頁</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 產品內頁內容開始 -->
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 hidden-xs">
-            <ul class="side-menu">
-              <li>
-                <a href="javascript:(0)">家俱</a>
-                <ul class="side-menu-child">
-                  <li>
-                    <a href="product_list.html">日常</a>
-                  </li>
-                  <li>
-                    <a href="product_list.html">馨享</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:(0)">文創商品</a>
-                <ul class="side-menu-child">
-                  <li>
-                    <a href="product_list.html">工藝類</a>
-                  </li>
-                  <li>
-                    <a href="product_list.html">食器類</a>
-                  </li>
-                  <li>
-                    <a href="product_list.html">文具類</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="javascript:(0)">個性化服務</a>
-                <ul class="side-menu-child">
-                  <li>
-                    <a href="product_list.html">個性化服務</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-9">
-            <div class="product_info">
-              <div class="product_top">
-                <div class="product_pic">
-                  <img class="main_pic" src="./Content/img/product/pic03.jpg" />
-                  <div class="small_pic">
-                    <ul>
-                      <!--data-img 需要放顯示的大圖-->
-                      <li
-                        class="active"
-                        style="
-                          background-image: url(./Content/img/product/pic03.jpg);
-                        "
-                        data-img="./Content/img/product/pic03.jpg"
-                      ></li>
-                      <li
-                        style="
-                          background-image: url(./Content/img/product/pic04.jpg);
-                        "
-                        data-img="./Content/img/product/pic04.jpg"
-                      ></li>
-                      <li
-                        style="
-                          background-image: url(./Content/img/product/pic05.jpg);
-                        "
-                        data-img="./Content/img/product/pic05.jpg"
-                      ></li>
-                    </ul>
-                    <div class="small_pic_nav">
-                      <div class="pre">‹</div>
-                      <div class="next">›</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product_text">
-                  <div class="share">
-                    <div class="share_icon" id="fbshare">
-                      <img src="./Content/img/product/facebook.svg" />分享
-                    </div>
-                  </div>
-                  <h1>商品名稱商品名稱</h1>
-                  <div class="desc">
-                    展開人生真、善、美事業<br />
-                    展開人生真、善、美事業<br />
-                    展開人生真、善、美事業<br />
-                  </div>
-                  <div class="price">原價 $900</div>
-                  <div class="purchase">
-                    <div class="qty">
-                      <button class="minus" onclick="product_qty(0)">
-                        <img src="./Content/img/product/minus.svg" />
-                      </button>
-                      <input
-                        id="qty"
-                        type="number"
-                        value="1"
-                        min="1"
-                        max="10"
-                        onchange="check_number(this)"
-                      />
-                      <button class="plus" onclick="product_qty(1)">
-                        <img src="./Content/img/product/plus.svg" />
-                      </button>
-                    </div>
-                    <div class="btn">加入購物車</div>
-                  </div>
-                </div>
-              </div>
-              <div class="product_desc">
-                <ul class="tab_nav">
-                  <li class="active" data-tab="tab_01">商品介紹</li>
-                  <li data-tab="tab_02">商品規格</li>
-                </ul>
-                <div id="tab_01" class="tab_panel active">
-                  <div class="editor">
-                    <div class="list">
-                      <div class="text">
-                        <p>
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                          這是文這是文案這是文案這是文案這是文案這是文案這
-                          是文案這是文這是文案這是文案這是文案這是文案這是
-                          文案這是文案這是文這是文案這是文案這是文案這是文
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                        </p>
-                        <p>
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                          這是文這是文案這是文案這是文案這是文案這是文案這
-                          是文案這是文這是文案這是文案這是文案這是文案這是
-                          文案這是文案這是文這是文案這是文案這是文案這是文
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                        </p>
-                      </div>
-                      <img src="./Content/img/product/pic14.jpg" />
-                    </div>
-                    <div class="list">
-                      <img src="./Content/img/product/pic15.jpg" />
-                    </div>
-                    <div class="list">
-                      <img src="./Content/img/product/pic16.jpg" />
-                      <div class="text">
-                        <p>
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                          這是文這是文案這是文案這是文案這是文案這是文案這
-                          是文案這是文這是文案這是文案這是文案這是文案這是
-                          文案這是文案這是文這是文案這是文案這是文案這是文
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                        </p>
-                        <p>
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                          這是文這是文案這是文案這是文案這是文案這是文案這
-                          是文案這是文這是文案這是文案這是文案這是文案這是
-                          文案這是文案這是文這是文案這是文案這是文案這是文
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list">
-                      <div class="text">
-                        <p>
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                          這是文這是文案這是文案這是文案這是文案這是文案這
-                          是文案這是文這是文案這是文案這是文案這是文案這是
-                          文案這是文案這是文這是文案這是文案這是文案這是文
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                        </p>
-                        <p>
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                          這是文這是文案這是文案這是文案這是文案這是文案這
-                          是文案這是文這是文案這是文案這是文案這是文案這是
-                          文案這是文案這是文這是文案這是文案這是文案這是文
-                          這是文案這是文案這是文案這是文案這是文案這是文案
-                        </p>
-                      </div>
-                      <img src="./Content/img/product/pic17.jpg" />
-                    </div>
-                  </div>
-                </div>
-                <div id="tab_02" class="tab_panel">
-                  <div class="editor">品名:商品名稱商品名稱</div>
-                </div>
-              </div>
+            <!--logo-->
+            <div class="logo">
+              <a href="./"
+                ><img src="./Content/img/index/223x65_上bar_logo.png"
+              /></a>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- /產品內頁內容結束 -->
-    </div>
-
-    <!--頁尾-->
-    <footer>
-      <div class="container">
-        <div class="footer_content">
-          <div class="footer_logo">
-            <a href="#"
-              ><img src="./Content/img/index/276x93_下bar_logo.png"
-            /></a>
-          </div>
-          <div class="footer_link">
-            <ul>
-              <li><a href="#">合潤介紹</a></li>
-              <li><a href="news.html">招募夥伴與徵才</a></li>
-              <li><a href="#">品牌介紹</a></li>
-              <li><a href="news.html">最新消息</a></li>
-              <li><a href="product_list.html">合潤購物中心</a></li>
-              <li><a href="#">聯絡我們</a></li>
-              <li><a href="privacy.html">隱私權聲明</a></li>
-            </ul>
-          </div>
-          <div class="footer_bottom">
-            <div class="contact">
-              <div>客服專線 07-345-0401</div>
-              <div>傳真 07-556-5126</div>
-              <div>地址 80466 台灣高雄市鼓山區博愛一路534號8樓之2</div>
-              <div>E-MAIL service.tw@twherun.com</div>
-            </div>
-            <div class="social">
+            <!--PC選單-->
+            <nav>
               <ul>
-                <li>
-                  <a href="#"
-                    ><img src="./Content/img/index/41x41_下barfb_icon.png"
-                  /></a>
+                <li><a href="#">合潤介紹</a></li>
+                <li><a href="#">品牌介紹</a></li>
+                <li><a href="experience.html">使用者體驗</a></li>
+                <li class="sub">
+                  <a href="#">最新消息</a>
+                  <div class="sub_menu">
+                    <ul>
+                      <li><a href="news.html">最新動態</a></li>
+                      <li><a href="product_news.html">產品消息</a></li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <a href="#"
-                    ><img src="./Content/img/index/41x41_下baryu_icon.png"
-                  /></a>
+                <li><a href="product_list.html">合潤購物中心</a></li>
+                <li class="sub">
+                  <a href="#">常見問題</a>
+                  <div class="sub_menu">
+                    <ul>
+                      <li><a href="notice.html">購物須知</a></li>
+                      <li><a href="policy.html">退換貨政策</a></li>
+                      <li><a href="upgrade.html">會員升級</a></li>
+                      <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <a href="#"
-                    ><img src="./Content/img/index/41x41_下barline_icon.png"
+              </ul>
+            </nav>
+            <!--會員登入 搜尋icon-->
+            <div class="toolbar">
+              <ul>
+                <li class="login_btn">
+                  <a href="#">登入</a>
+                </li>
+                <li class="search_btn">
+                  <img src="./Content/img/index/22x22_上bar_icon.png" />
+                </li>
+                <li class="user_btn sub">
+                  <a href="javascript:void(0)"
+                    ><img src="./Content/img/index/20x20_上bar_icon.png"
                   /></a>
+                  <div class="sub_menu">
+                    <ul>
+                      <li><a href="information.html">會員資料</a></li>
+                      <li><a href="notice.html">購物須知</a></li>
+                      <li><a href="order.html">訂單查詢</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="cart_btn sub">
+                  <a href="javascript:void(0)"
+                    ><img src="./Content/img/index/24x21_上bar_icon.png" /><span
+                      >0</span
+                    ></a
+                  >
+                  <div class="sub_menu">
+                    <ul>
+                      <li>
+                        <div class="name">商品名稱</div>
+                        <div class="price">$8,320</div>
+                      </li>
+                      <li>
+                        <div class="name">商品名稱</div>
+                        <div class="price">$8,320</div>
+                      </li>
+                    </ul>
+                    <div class="total">總計 $8,320</div>
+                    <div class="cart_in_btn">
+                      <a href="cart.html">立即結帳</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
+            <!--彈出搜尋bar-->
+            <div class="search_bar">
+              <div class="container">
+                <form class="search_inner" action="/search" method="get">
+                  <input type="text" name="search" placeholder="請輸入關鍵字" />
+                  <button>搜尋</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
+      </header>
+
+      <div class="contain">
+        <!-- 麵包屑路徑 -->
+        <div class="container">
+          <div class="bread">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">合潤購物中心</a></li>
+              <li>合潤購物中心列表頁</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 產品內頁內容開始 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 hidden-xs">
+              <ul class="side-menu">
+                <li>
+                  <a href="javascript:(0)">家俱</a>
+                  <ul class="side-menu-child">
+                    <li>
+                      <a href="product_list.html">日常</a>
+                    </li>
+                    <li>
+                      <a href="product_list.html">馨享</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:(0)">文創商品</a>
+                  <ul class="side-menu-child">
+                    <li>
+                      <a href="product_list.html">工藝類</a>
+                    </li>
+                    <li>
+                      <a href="product_list.html">食器類</a>
+                    </li>
+                    <li>
+                      <a href="product_list.html">文具類</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:(0)">個性化服務</a>
+                  <ul class="side-menu-child">
+                    <li>
+                      <a href="product_list.html">個性化服務</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+              <div class="product_info">
+                <div class="product_top">
+                  <div class="product_pic">
+                    <img
+                      class="main_pic"
+                      src="./Content/img/product/pic03.jpg"
+                    />
+                    <div class="small_pic">
+                      <ul>
+                        <!--data-img 需要放顯示的大圖-->
+                        <li
+                          class="active"
+                          style="
+                            background-image: url(./Content/img/product/pic03.jpg);
+                          "
+                          data-img="./Content/img/product/pic03.jpg"
+                        ></li>
+                        <li
+                          style="
+                            background-image: url(./Content/img/product/pic04.jpg);
+                          "
+                          data-img="./Content/img/product/pic04.jpg"
+                        ></li>
+                        <li
+                          style="
+                            background-image: url(./Content/img/product/pic05.jpg);
+                          "
+                          data-img="./Content/img/product/pic05.jpg"
+                        ></li>
+                      </ul>
+                      <div class="small_pic_nav">
+                        <div class="pre">‹</div>
+                        <div class="next">›</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_text">
+                    <div class="share">
+                      <div class="share_icon" id="fbshare">
+                        <img src="./Content/img/product/facebook.svg" />分享
+                      </div>
+                    </div>
+                    <h1>商品名稱商品名稱</h1>
+                    <div class="desc">
+                      展開人生真、善、美事業<br />
+                      展開人生真、善、美事業<br />
+                      展開人生真、善、美事業<br />
+                    </div>
+                    <div class="price">原價 $900</div>
+                    <div class="purchase">
+                      <div class="qty">
+                        <button class="minus" onclick="product_qty(0)">
+                          <img src="./Content/img/product/minus.svg" />
+                        </button>
+                        <input
+                          id="qty"
+                          type="number"
+                          value="1"
+                          min="1"
+                          max="10"
+                          onchange="check_number(this)"
+                        />
+                        <button class="plus" onclick="product_qty(1)">
+                          <img src="./Content/img/product/plus.svg" />
+                        </button>
+                      </div>
+                      <div class="btn">加入購物車</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product_desc">
+                  <ul class="tab_nav">
+                    <li class="active" data-tab="tab_01">商品介紹</li>
+                    <li data-tab="tab_02">商品規格</li>
+                  </ul>
+                  <div id="tab_01" class="tab_panel active">
+                    <div class="editor">
+                      <div class="list">
+                        <div class="text">
+                          <p>
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                            這是文這是文案這是文案這是文案這是文案這是文案這
+                            是文案這是文這是文案這是文案這是文案這是文案這是
+                            文案這是文案這是文這是文案這是文案這是文案這是文
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                          </p>
+                          <p>
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                            這是文這是文案這是文案這是文案這是文案這是文案這
+                            是文案這是文這是文案這是文案這是文案這是文案這是
+                            文案這是文案這是文這是文案這是文案這是文案這是文
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                          </p>
+                        </div>
+                        <img src="./Content/img/product/pic14.jpg" />
+                      </div>
+                      <div class="list">
+                        <img src="./Content/img/product/pic15.jpg" />
+                      </div>
+                      <div class="list">
+                        <img src="./Content/img/product/pic16.jpg" />
+                        <div class="text">
+                          <p>
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                            這是文這是文案這是文案這是文案這是文案這是文案這
+                            是文案這是文這是文案這是文案這是文案這是文案這是
+                            文案這是文案這是文這是文案這是文案這是文案這是文
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                          </p>
+                          <p>
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                            這是文這是文案這是文案這是文案這是文案這是文案這
+                            是文案這是文這是文案這是文案這是文案這是文案這是
+                            文案這是文案這是文這是文案這是文案這是文案這是文
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list">
+                        <div class="text">
+                          <p>
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                            這是文這是文案這是文案這是文案這是文案這是文案這
+                            是文案這是文這是文案這是文案這是文案這是文案這是
+                            文案這是文案這是文這是文案這是文案這是文案這是文
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                          </p>
+                          <p>
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                            這是文這是文案這是文案這是文案這是文案這是文案這
+                            是文案這是文這是文案這是文案這是文案這是文案這是
+                            文案這是文案這是文這是文案這是文案這是文案這是文
+                            這是文案這是文案這是文案這是文案這是文案這是文案
+                          </p>
+                        </div>
+                        <img src="./Content/img/product/pic17.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab_02" class="tab_panel">
+                    <div class="editor">品名:商品名稱商品名稱</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /產品內頁內容結束 -->
       </div>
-    </footer>
+
+      <!--頁尾-->
+      <footer>
+        <div class="container">
+          <div class="footer_content">
+            <div class="footer_logo">
+              <a href="#"
+                ><img src="./Content/img/index/276x93_下bar_logo.png"
+              /></a>
+            </div>
+            <div class="footer_link">
+              <ul>
+                <li><a href="#">合潤介紹</a></li>
+                <li><a href="news.html">招募夥伴與徵才</a></li>
+                <li><a href="#">品牌介紹</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="product_list.html">合潤購物中心</a></li>
+                <li><a href="#">聯絡我們</a></li>
+                <li><a href="privacy.html">隱私權聲明</a></li>
+              </ul>
+            </div>
+            <div class="footer_bottom">
+              <div class="contact">
+                <div>客服專線 07-345-0401</div>
+                <div>傳真 07-556-5126</div>
+                <div>地址 80466 台灣高雄市鼓山區博愛一路534號8樓之2</div>
+                <div>E-MAIL service.tw@twherun.com</div>
+              </div>
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="./Content/img/index/41x41_下barfb_icon.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./Content/img/index/41x41_下baryu_icon.png"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./Content/img/index/41x41_下barline_icon.png"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <nav id="mobile_menu">
+      <div id="panel-menu">
+        <ul>
+          <li><a href="/">回到首頁</a></li>
+          <li><a href="#">合潤介紹</a></li>
+          <li><a href="#">品牌介紹</a></li>
+          <li><a href="#">使用者體驗</a></li>
+          <li>
+            <span>最新消息</span>
+            <ul>
+              <li><a href="news.html">最新動態</a></li>
+              <li><a href="product_news.html">產品消息</a></li>
+            </ul>
+          </li>
+          <li><a href="product_list.html">合潤購物中心</a></li>
+          <li>
+            <span>常見問題</span>
+            <ul>
+              <li><a href="notice.html">購物須知</a></li>
+              <li><a href="policy.html">退換貨政策</a></li>
+              <li><a href="upgrade.html">會員升級</a></li>
+              <li><a href="#">聯絡我們</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>會員中心</span>
+            <ul>
+              <li>
+                <span>業績與獎金查詢</span>
+                <ul>
+                  <li><a href="performance.html">組織業績表</a></li>
+                  <li><a href="rank.html">組織管理</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>個人帳戶管理</span>
+                <ul>
+                  <li><a href="performance.html">帳戶管理</a></li>
+                  <li><a href="#">個人獎金</a></li>
+                  <li><a href="#">購物金</a></li>
+                  <li><a href="#">撥款明細</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>訂單相關查詢</span>
+                <ul>
+                  <li><a href="order.html">訂單查詢</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>訊息中心</span>
+                <ul>
+                  <li><a href="#">訊息中心</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>相關下載</span>
+                <ul>
+                  <li><a href="dowload.html">檔案下檔</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="panel-cart">
+        <div>
+          <div>
+            <div class="name">商品名稱</div>
+            <div class="price">$8,320</div>
+          </div>
+          <div>
+            <div class="name">商品名稱</div>
+            <div class="price">$8,320</div>
+          </div>
+        </div>
+        <div class="total">總計 $8,320</div>
+        <div class="cart_in_btn">
+          <a href="cart.html">立即結帳</a>
+        </div>
+      </div>
+    </nav>
     <script src="./Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./Scripts/mmenu.js"></script>
     <script src="./Scripts/main.js"></script>
   </body>
 </html>
