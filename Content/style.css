@@ -239,6 +239,7 @@ header {
 .mobile_cart .cart_in_btn {
   position: relative;
   bottom: 0;
+  margin-top: 2rem;
 }
 .mobile_cart .cart_in_btn a {
   border: 3px solid #fff;
@@ -2176,16 +2177,16 @@ footer .footer_bottom .social ul li a:hover {
   }
   .member_main .form .list > label {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 100px;
-    flex: 0 0 100px;
+    -ms-flex: 0 0 95px;
+    flex: 0 0 95px;
   }
   .member_main .form .list .input {
     padding: 10px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(100% - 100px);
-    flex: 0 0 calc(100% - 100px);
+    -ms-flex: 0 0 calc(100% - 95px);
+    flex: 0 0 calc(100% - 95px);
   }
   .member_main .form .list .input input[type='text'],
   .member_main .form .list .input select {
