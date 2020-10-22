@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>參與合潤事業</title>
+    <title>加入會員</title>
     <link rel="stylesheet" href="./Content/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -125,33 +125,197 @@
           <div class="bread">
             <ul>
               <li><a href="#">首頁</a></li>
-              <li><a href="#">常見問題</a></li>
-              <li>參與合潤事業</li>
+              <li>加入會員</li>
             </ul>
           </div>
-          <div class="b_title">參與合潤事業</div>
         </div>
-        <div class="policy">
-          <div class="banner">
-            <img src="./Content/img/upgrade/參與合潤事業_BANNER-01.jpg" />
-          </div>
-          <div class="container">
-            <div class="item">
-              <div class="title">七天鑑賞期服務</div>
-              <div class="list">
-                <img
-                  src="./Content/img/upgrade/參與合潤事業_一般VIP會員-01.png"
+        <!--會員註冊頁面 開始-->
+        <div class="container Register-page">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <div class="alert alert-register">
+                <p class="text-center">註冊合潤帳號</p>
+              </div>
+              <form
+                action="/Account/Register"
+                class="form-horizontal"
+                method="post"
+                role="form"
+                novalidate="novalidate"
+              >
+                <input
+                  name="__RequestVerificationToken"
+                  type="hidden"
+                  value="HUlRBSarBAMKRz9M5YtFT-rKSmRWufTlhh6g3oqtnz4dvkK6G6qHNaE07l8JVnGk97f36Na8Yyur8o_d6ggxwdIoOzEJM8s408O2SHCHRnI1"
                 />
-              </div>
+                <div class="form-group">
+                  <label class="col-md-2 control-label" for="Email"
+                    >電子郵件</label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      class="form-control"
+                      data-val="true"
+                      data-val-email="請輸入有效的電子郵件位址"
+                      data-val-required="您必須輸入Email，此Email為後續您登入的帳號"
+                      id="Email"
+                      name="Email"
+                      type="text"
+                      value=""
+                    />
+                    <span
+                      class="field-validation-valid text-danger"
+                      data-valmsg-for="Email"
+                      data-valmsg-replace="true"
+                    ></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2 control-label" for="Password"
+                    >密碼</label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      class="form-control"
+                      data-val="true"
+                      data-val-length="密碼 的長度至少必須為 6 個字元。"
+                      data-val-length-max="100"
+                      data-val-length-min="6"
+                      data-val-required="請輸入密碼"
+                      id="Password"
+                      name="Password"
+                      type="password"
+                    />
+                    <span
+                      class="field-validation-valid text-danger"
+                      data-valmsg-for="Password"
+                      data-valmsg-replace="true"
+                    ></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2 control-label" for="ConfirmPassword"
+                    >確認密碼</label
+                  >
+                  <div class="col-md-10">
+                    <input
+                      class="form-control"
+                      id="ConfirmPassword"
+                      name="ConfirmPassword"
+                      type="password"
+                    />
+                    <span
+                      class="field-validation-valid text-danger"
+                      data-valmsg-for="ConfirmPassword"
+                      data-valmsg-replace="true"
+                    ></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="">驗證碼</label>
+                  <div class="col-sm-5">
+                    <input
+                      class="form-control"
+                      data-val="true"
+                      data-val-required="請輸入驗證碼"
+                      id="CaptchaInputText"
+                      name="CaptchaInputText"
+                      type="text"
+                      value=""
+                    />
+                    <span
+                      class="field-validation-valid text-danger"
+                      data-valmsg-for="CaptchaInputText"
+                      data-valmsg-replace="true"
+                    ></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <img
+                      id="CaptchaImage"
+                      src="./Content/img/login/Generate.gif"
+                      style="max-width: 100%"
+                    />
+                    <input
+                      id="CaptchaDeText"
+                      name="CaptchaDeText"
+                      type="hidden"
+                      value="e989076a04a646f386484140b8c6f25c"
+                    />
+
+                    <script type="text/javascript">
+                      function ______e989076a04a646f386484140b8c6f25c________() {
+                        $('#c0e7ab72300545378afac08c1987bd73').hide()
+                        $.post(
+                          '/DefaultCaptcha/Refresh',
+                          { t: $('#CaptchaDeText').val() },
+                          function () {
+                            $('#c0e7ab72300545378afac08c1987bd73').show()
+                          }
+                        )
+                        return false
+                      }
+                    </script>
+                    <a
+                      href="#CaptchaInputText"
+                      id="c0e7ab72300545378afac08c1987bd73"
+                      onclick="______e989076a04a646f386484140b8c6f25c________()"
+                      >換一張</a
+                    >
+                  </div>
+                </div>
+                <input type="hidden" name="Parameter" value="" />
+                <input type="hidden" name="gtype" value="" />
+                <div class="form-group">
+                  <div class="col-md-10 col-md-offset-2"></div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-offset-2 col-md-10">
+                    <input
+                      id="btnConfirm"
+                      type="submit"
+                      class="btn btn-lg btn-block btn-custom"
+                      value="註冊"
+                    />
+                    <text>如看不到驗證碼請開啟cookie</text>
+                    <script>
+                      $('#btnConfirm').click(function () {
+                        fbq('track', 'CompleteRegistration') // 2018/09/01, lozenlin, add
+                      })
+                    </script>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="item">
-              <div class="title">成為事業夥伴</div>
-              <div class="list">
-                <img src="./Content/img/upgrade/參與合潤事業_電商加值-01.png" />
+            <div class="col-xs-12 col-sm-4 login-right">
+              <div class="alert alert-register">
+                <p class="text-center">免註冊直接登入</p>
               </div>
+
+              <form action="/Account/ExternalLogin" method="post">
+                <input
+                  name="__RequestVerificationToken"
+                  type="hidden"
+                  value="Iqs3T8OuqqznlGIEGp3wpdjNme39anfr4u5_JAuUy-ukhmOAhda1uNWC6rVGsv5slJ5Anpl9U5Cai4xTp6laF4EcY3p9EBH8norm85OxhB41"
+                />
+                <div id="socialLoginList">
+                  <p>
+                    <button
+                      type="submit"
+                      class="btn btn-lg btn-fb btn-block"
+                      id="Facebook"
+                      name="provider"
+                      value="Facebook"
+                      title="使用 Facebook 帳戶登入"
+                    >
+                      Facebook登入
+                    </button>
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
+        <!--會員註冊頁面 結束-->
       </div>
 
       <!--頁尾-->
