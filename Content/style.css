@@ -2133,6 +2133,7 @@ footer .footer_bottom .social ul li a:hover {
   line-height: 1;
   outline: none;
   max-width: 100%;
+  min-width: 0;
 }
 .member_main .popup .popup_main .send {
   display: -webkit-box;
@@ -2241,6 +2242,26 @@ footer .footer_bottom .social ul li a:hover {
   }
   .member_main .popup .popup_main .popup_form .list .item.half:first-child {
     border-bottom: 1px solid #ccc;
+  }
+
+  .member_main .popup .popup_main .popup_form.password .list{
+    border: none;
+  }
+  .member_main .popup .popup_main .popup_form.password .list .item{
+    flex-wrap: wrap;
+  }
+
+  .member_main .popup .popup_main .popup_form.password .list .item label{
+    flex: 0 0 100%;
+    justify-content: flex-start;
+  }
+  .member_main .popup .popup_main .popup_form.password .list .item .text{
+    border: none;
+    padding: 5px 0;
+    flex: 0 0 100%;
+  }
+  .member_main .popup .popup_main .popup_form.password .list .item .text input{
+    flex: 0 0 100%;
   }
 }
 
@@ -2367,20 +2388,21 @@ footer .footer_bottom .social ul li a:hover {
   color: #333333;
   margin-bottom: 2.5rem;
 }
-.title_product::after {
-  content: '';
-  border-bottom: 3px solid #b28146;
-  width: 239px;
-  position: absolute;
-  bottom: -1.5px;
-  left: 0;
-}
 .title_product h1 {
   display: inline-block;
+  position: relative;
   margin: 0;
   line-height: 1.5;
   font-size: 1.5rem;
   font-weight: 500;
+}
+.title_product h1::after {
+  content: '';
+  border-bottom: 3px solid #b28146;
+  width: 100%;
+  position: absolute;
+  bottom: -1.5px;
+  left: 0;
 }
 .title_product .more {
   position: absolute;
