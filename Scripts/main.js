@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function () {
   /*產生選單、搜尋開啟遮幕*/
   let close = `<div class="mobile_menu_close" onclick="javascript:menu_close()"></div>`
-  $('body').prepend(close)
+  $('#page').prepend(close)
 
   /*向上滑到頂*/
   let goTop = `<div class="go_top" onclick="javascript:go_top()"></div>`
-  $('body').prepend(goTop)
+  $('#page').prepend(goTop)
 
   /*首頁banner輪播*/
   if ($('.banner_slider').length) {
