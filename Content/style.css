@@ -3697,7 +3697,7 @@ footer .footer_bottom .social ul li a:hover {
   -ms-flex: 1;
   flex: 1;
   margin-right: 2rem;
-  line-height: 2;
+  line-height: 1.5;
   font-size: 0.9rem;
 }
 .cart_form .body .list .td:last-child {
