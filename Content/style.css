@@ -1914,7 +1914,7 @@ footer .footer_bottom .social ul li a:hover {
   margin-right: 10px;
 }
 .contact_page .form .list.verifiy .input .verifiy_input input {
-  width: 215px;
+  width: 100%;
 }
 .contact_page .form .list.verifiy .input .verifiy_input .verifiy_tip {
   text-align: right;
