@@ -1200,6 +1200,21 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
+/*框架上的大banner*/
+.top_banner {
+  margin-top: -3rem;
+  margin-bottom: 7rem;
+}
+.top_banner img {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .top_banner {
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+  }
+}
+
 /*共用麵包屑*/
 .bread {
   margin-bottom: 2rem;
@@ -1433,6 +1448,125 @@ footer .footer_bottom .social ul li a:hover {
   }
 }
 
+/*品牌介紹*/
+.brand .list {
+  padding: 3rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.brand .list:last-child {
+  border: none;
+}
+.brand .list .item {
+  max-width: 915px;
+  margin: 0 auto;
+}
+.brand .list .item .top {
+  display: flex;
+  align-items: center;
+  background-color: #e5796d;
+  margin-bottom: 2.5rem;
+}
+.brand .list .item .top img {
+  margin-right: 2rem;
+  width: 230px;
+}
+.brand .list .item .top .name {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.brand .list .item .top a.button {
+  background-color: #ac9b65;
+  color: #fff;
+  margin-left: auto;
+  margin-right: 2.5rem;
+  font-size: 1.25rem;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+.brand .list .item .top a.button:hover {
+  opacity: 0.85;
+}
+.brand .list .item .bottom {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+@media (max-width: 992px) {
+  .brand .list {
+    padding: 1rem 0;
+  }
+  .brand .list .item .top {
+    flex-wrap: wrap;
+  }
+  .brand .list .item .top img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .brand .list .item .top .name {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .brand .list .item .top a.button {
+    margin: 0 auto 1rem auto;
+  }
+}
+
+/*品牌介紹內頁*/
+.brandInfo .banner {
+  margin-bottom: 3rem;
+}
+.brandInfo .banner img {
+  width: 100%;
+}
+.brandInfo .brand_content .top {
+  text-align: center;
+}
+.brandInfo .brand_content .top .text {
+  text-align: left;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+.brandInfo .brand_content .bottom {
+  margin-top: 2rem;
+}
+.brandInfo .brand_content .bottom .pic {
+  display: flex;
+  align-items: center;
+}
+.brandInfo .brand_content .bottom .pic .item {
+  flex: 1;
+  text-align: center;
+}
+.brandInfo .brand_content .bottom .pic .item img {
+  max-width: 100%;
+}
+.brandInfo .brand_content .bottom .text {
+  text-align: left;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+.brandInfo .brand_content .back {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.brandInfo .brand_content .back a {
+  background-color: #e5796d;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 10px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.brandInfo .brand_content .back a:hover {
+  opacity: 0.8;
+}
+@media (max-width: 992px) {
+  .brandInfo .banner {
+    margin-bottom: 1rem;
+  }
+}
 /*招募人才頁面*/
 .recruit .banner {
   margin-top: 1.5rem;
@@ -2527,6 +2661,43 @@ footer .footer_bottom .social ul li a:hover {
 .member_main .table .tr .td:last-child {
   border-right: none;
 }
+.member_main .table .foot{
+  display: flex;
+}
+.member_main .table .foot .td{
+  flex: 3;
+  line-height: 1.25;
+  font-size: 1rem;
+  line-height: 1.25;
+  padding: 10px 0;
+  word-break: break-all;
+}
+.member_main .table .foot .td.foot_0{
+  flex: 11;
+  background-color: #b3b3b3;
+  color: #fff;
+  text-align: center;
+  border-right: 1.5px solid #ddd;
+}
+.member_main .table .foot .td.foot_1{
+  flex: 3;
+  text-align: center;
+  border-right: 1.5px solid #ddd;
+}
+.member_main .table .foot .td.foot_2{
+  flex: 6;
+  background-color: #b3b3b3;
+  color: #fff;
+  text-align: center;
+  border-right: 1.5px solid #ddd;
+}
+.member_main .table .foot .td.foot_3{
+  flex: 3;
+  text-align: center;
+}
+.member_main .table .foot .td.foot_4{
+  flex: 6;
+}
 .member_main .table .tr .td .detail {
   background-color: #ee736b;
   color: #fff;
@@ -2541,12 +2712,52 @@ footer .footer_bottom .social ul li a:hover {
   opacity: 0.8;
 }
 
+.member_main .table .tr .td .operation_btn {
+  background-color: #ee736b;
+  color: #fff;
+  width: 70px;
+  text-align: center;
+  line-height: 2;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+}
+
 /*會員表格 欄位大小特別定義*/
 .member_main .table .number {
   -webkit-box-flex: 1 !important;
   -ms-flex: 1 !important;
   flex: 1 !important;
 }
+.member_main .table .percent {
+  -webkit-box-flex: 1 !important;
+  -ms-flex: 1 !important;
+  flex: 1 !important;
+}
+.member_main .table .operation {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .member_main .table .tr .td {
+    word-break: break-all;
+  }
+  .member_main .table .tr .td .detail {
+    width: 60px;
+    padding: 1px 3px;
+  }
+
+  .member_main .table .number {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 35px !important;
+    flex: 0 0 35px !important;
+  }
+  .member_main .table .tr .td .operation_btn {
+    width: 40px;
+  }
+}
+
 
 /*會員表單*/
 .member_main .form {
@@ -2937,13 +3148,7 @@ footer .footer_bottom .social ul li a:hover {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .member_main .table .tr .td {
-    word-break: break-all;
-  }
-  .member_main .table .tr .td .detail {
-    width: 60px;
-    padding: 1px 3px;
-  }
+
   /*會員表單 生日下拉寬度*/
   .member_main .form .list .input .birth .year {
     -webkit-box-flex: 1;
@@ -2960,11 +3165,7 @@ footer .footer_bottom .social ul li a:hover {
     -ms-flex: 1;
     flex: 1;
   }
-  .member_main .table .number {
-    -webkit-box-flex: 0 !important;
-    -ms-flex: 0 0 35px !important;
-    flex: 0 0 35px !important;
-  }
+ 
 
   .member_main .popup .popup_main .popup_form .list .item:first-child {
     border-right: none;

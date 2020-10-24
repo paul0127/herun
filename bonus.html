@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>檔案下載</title>
+    <title>個人獎金</title>
     <link rel="stylesheet" href="./Content/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <link
       rel="stylesheet"
       href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -126,8 +130,8 @@
             <ul>
               <li><a href="#">首頁</a></li>
               <li><a href="#">會員中心</a></li>
-              <li><a href="#">相關下載</a></li>
-              <li>檔案下載</li>
+              <li><a href="#">個人帳戶管理</a></li>
+              <li>個人獎金</li>
             </ul>
           </div>
         </div>
@@ -194,19 +198,180 @@
             </div>
 
             <div class="member_main">
-              <div class="title">檔案下載</div>
+              <div class="title">個人獎金</div>
+              <div class="form">
+                <div class="list">
+                  <label>會員編號</label>
+                  <div class="input">A200257</div>
+                </div>
+                <div class="list">
+                  <label>會員姓名</label>
+                  <div class="input">林曉雅</div>
+                </div>
+                <div class="list">
+                  <label>計算日期</label>
+                  <div class="input">
+                    <input
+                      type="text"
+                      id="dateStart"
+                      placeholder="請選擇計算日期開始"
+                    />
+                    －
+                    <input
+                      type="text"
+                      id="dateEnd"
+                      placeholder="請選擇計算日期結束"
+                    />
+                  </div>
+                </div>
+                <div class="list">
+                  <label>狀態</label>
+                  <div class="input">
+                    <select>
+                      <option>未申請</option>
+                      <option>已申請</option>
+                    </select>
+                    <button class="to_search">查詢</button>
+                  </div>
+                </div>
+              </div>
               <div class="table">
                 <div class="head">
-                  <div class="th">檔案名稱</div>
-                  <div class="th">備註</div>
-                  <div class="th">下載</div>
+                  <div class="th number">項次</div>
+                  <div class="th">訂單日期</div>
+                  <div class="th">訂單編號</div>
+                  <div class="th">獎金名稱</div>
+                  <div class="th percent">獎金比例</div>
+                  <div class="th">銷售金額</div>
+                  <div class="th">下線編號</div>
+                  <div class="th">下線姓名</div>
+                  <div class="th">金額<br />(或購物金)</div>
+                  <div class="th">狀態</div>
+                  <div class="th">功能</div>
                 </div>
                 <div class="tr">
-                  <div class="td">獎金帳戶登記豎翼動申請表</div>
-                  <div class="td"></div>
-                  <div class="td">
-                    <button class="detail">下載</button>
-                  </div>
+                  <div class="td number">1</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="tr">
+                  <div class="td number">2</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="tr">
+                  <div class="td number">3</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="tr">
+                  <div class="td number">4</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="tr">
+                  <div class="td number">5</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="tr">
+                  <div class="td number">6</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="tr">
+                  <div class="td number">7</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="tr">
+                  <div class="td number">8</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="tr">
+                  <div class="td number">9</div>
+                  <div class="td">2020/04/27</div>
+                  <div class="td">76405674</div>
+                  <div class="td">零售獎金</div>
+                  <div class="td percent">5</div>
+                  <div class="td">4,000</div>
+                  <div class="td">A200257</div>
+                  <div class="td">林曉雅</div>
+                  <div class="td">200</div>
+                  <div class="td">未申請</div>
+                  <div class="td operation"><button class="operation_btn">帳戶變更</button><button class="operation_btn">轉購物金</button></div>
+                </div>
+                <div class="foot">
+                  <div class="td foot_0">當月銷售獎金</div>
+                  <div class="td foot_1">32,000</div>
+                  <div class="td foot_2">當月獎金(或購物金)合計</div>
+                  <div class="td foot_3">5,800</div>
+                  <div class="td foot_4"></div>
                 </div>
               </div>
             </div>
@@ -389,8 +554,15 @@
       </div>
     </nav>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="./Scripts/mmenu.js"></script>
     <script type="text/javascript" src="./Scripts/mmenu.polyfills.js"></script>
     <script src="./Scripts/main.js"></script>
+    <script>
+      $(function () {
+        $('#dateStart').datepicker()
+        $('#dateEnd').datepicker()
+      })
+    </script>
   </body>
 </html>
