@@ -2667,7 +2667,7 @@ footer .footer_bottom .social ul li a:hover {
 .member_main .table .foot .td{
   flex: 3;
   line-height: 1.25;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.25;
   padding: 10px 0;
   word-break: break-all;
@@ -2740,6 +2740,18 @@ footer .footer_bottom .social ul li a:hover {
 }
 
 @media (max-width: 992px) {
+  .member_main .table.fixed{
+    overflow-x: scroll;
+  }
+  .member_main .table.fixed .head{
+    width: 876px;
+  }
+  .member_main .table.fixed .tr{
+    width: 876px;
+  }
+  .member_main .table.fixed .foot{
+    width: 876px;
+  }
   .member_main .table .tr .td {
     word-break: break-all;
   }
@@ -2754,7 +2766,7 @@ footer .footer_bottom .social ul li a:hover {
     flex: 0 0 35px !important;
   }
   .member_main .table .tr .td .operation_btn {
-    width: 40px;
+    font-size: .9rem;
   }
 }
 
