@@ -201,7 +201,7 @@
               <div class="title">訊息中心</div>
               <div class="form">
                 <div class="list">
-                  <label>選擇日期</label>
+                  <label>日期</label>
                   <div class="input">
                     <input
                       type="text"
@@ -430,8 +430,8 @@
     <script src="./Scripts/main.js"></script>
     <script>
       $(function () {
-        $('#dateStart').datepicker()
-        $('#dateEnd').datepicker()
+        $('#dateStart').datepicker({ dateFormat: 'yy-mm-dd' })
+        $('#dateEnd').datepicker({ dateFormat: 'yy-mm-dd' })
       })
     </script>
   </body>
