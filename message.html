@@ -226,7 +226,7 @@
                 <div class="tr" v-for="item in message_list">
                   <div class="td date">2020/09/09 11:52</div>
                   <div class="td message_content">
-                    <a href="#" @click="open_popup(item.message_id)"
+                    <a @click="open_popup(item.message_id)"
                       >{{formatContent(item.message_id)}}</a
                     >
                   </div>

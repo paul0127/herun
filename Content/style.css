@@ -2750,6 +2750,7 @@ footer .footer_bottom .social ul li a:hover {
   color: #585858;
   text-decoration: none;
   text-align: left;
+  cursor: pointer;
 }
 .member_main .table .message_content a:hover{
   opacity: .8;
