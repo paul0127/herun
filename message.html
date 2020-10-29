@@ -197,7 +197,7 @@
               </ul>
             </div>
 
-            <div class="member_main">
+            <div class="member_main" id="app">
               <div class="title">訊息中心</div>
               <div class="form">
                 <div class="list">
@@ -223,25 +223,23 @@
                   <div class="th date">時間</div>
                   <div class="th">內容</div>
                 </div>
-                <div class="tr">
+                <div class="tr" v-for="item in message_list">
                   <div class="td date">2020/09/09 11:52</div>
-                  <div class="td message_content"><a href="#">內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字</a></div>
+                  <div class="td message_content">
+                    <a href="#" @click="open_popup(item.message_id)"
+                      >{{formatContent(item.message_id)}}</a
+                    >
+                  </div>
                 </div>
-                <div class="tr">
-                  <div class="td date">2020/09/09 11:52</div>
-                  <div class="td message_content"><a href="#">內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字</a></div>
+              </div>
+
+              <div class="popup" :class="{active:popup_toggle}">
+                <div class="popup_close">
+                  <i class="fa fa-times-circle" @click="close_popup"></i>
                 </div>
-                <div class="tr">
-                  <div class="td date">2020/09/09 11:52</div>
-                  <div class="td message_content"><a href="#">內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字</a></div>
-                </div>
-                <div class="tr">
-                  <div class="td date">2020/09/09 11:52</div>
-                  <div class="td message_content"><a href="#">內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字</a></div>
-                </div>
-                <div class="tr">
-                  <div class="td date">2020/09/09 11:52</div>
-                  <div class="td message_content"><a href="#">內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字</a></div>
+                <div class="popup_main">
+                  <div class="title time">{{current_message.message_date}}</div>
+                  <div class="content">{{current_message.message_content}}</div>
                 </div>
               </div>
             </div>
@@ -427,11 +425,69 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="./Scripts/mmenu.js"></script>
     <script type="text/javascript" src="./Scripts/mmenu.polyfills.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.10/vue.js"></script>
     <script src="./Scripts/main.js"></script>
     <script>
       $(function () {
         $('#dateStart').datepicker({ dateFormat: 'yy-mm-dd' })
         $('#dateEnd').datepicker({ dateFormat: 'yy-mm-dd' })
+      })
+
+      let app = new Vue({
+        el: '#app',
+        data() {
+          return {
+            message_list: [],
+            current_message: {},
+            popup_toggle: false,
+            text_length: 200,
+          }
+        },
+        mounted() {
+          let self = this
+          $.ajax({
+            url: './Content/data/message_list.json',
+            type: 'get',
+            success: function (resp) {
+              self.message_list = resp
+            },
+          })
+        },
+        methods: {
+          open_popup(message_id) {
+            this.popup_toggle = true
+
+            let Index = this.message_list.findIndex(
+              (item) => item.message_id === message_id
+            )
+            this.current_message = JSON.parse(
+              JSON.stringify(this.message_list[Index])
+            )
+          },
+          close_popup() {
+            this.popup_toggle = false
+          },
+          formatContent(message_id) {
+            let Index = this.message_list.findIndex(
+              (item) => item.message_id === message_id
+            )
+
+            let content
+            if (
+              this.message_list[Index].message_content.length > this.text_length
+            ) {
+              content =
+                this.message_list[Index].message_content.substr(
+                  0,
+                  this.text_length
+                ) + '....'
+            } else {
+              content = this.message_list[Index].message_content
+            }
+
+            return content
+          },
+        },
       })
     </script>
   </body>

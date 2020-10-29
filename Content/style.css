@@ -2742,13 +2742,14 @@ footer .footer_bottom .social ul li a:hover {
   flex: 0 0 140px !important;
 }
 .member_main .table .message_content{
-  text-align: left !important;
+  justify-content: flex-start !important;
   padding: 10px 8px !important;
   font-weight: 500 !important;
 }
 .member_main .table .message_content a{
   color: #585858;
   text-decoration: none;
+  text-align: left;
 }
 .member_main .table .message_content a:hover{
   opacity: .8;
@@ -2971,6 +2972,7 @@ footer .footer_bottom .social ul li a:hover {
   -ms-flex-pack: end;
   justify-content: flex-end;
   font-size: 1.5rem;
+  margin-bottom: .5rem;
 }
 .member_main .popup .popup_close i {
   cursor: pointer;
@@ -2981,6 +2983,18 @@ footer .footer_bottom .social ul li a:hover {
 .member_main .popup .popup_main .title {
   font-weight: bold;
   margin-bottom: 0.5rem;
+}
+.member_main .popup .popup_main .title.time {
+  color: #fff;
+  background-color: #b3b3b3;
+  padding: 5px 10px;
+  margin-bottom: 0;
+}
+.member_main .popup .popup_main .content{
+  border: 1px solid #b3b3b3;
+  border-top: none;
+  padding: 10px;
+  font-size: 1rem;
 }
 .member_main .popup .popup_main .popup_form {
   margin-bottom: 1.5rem;
