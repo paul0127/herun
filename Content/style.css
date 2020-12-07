@@ -2598,6 +2598,20 @@ footer .footer_bottom .social ul li a:hover {
   padding-top: 5px;
 }
 
+/*會員訊息中心內頁*/
+.member_main > .msg_title {
+  color: #fff;
+  background-color: #b3b3b3;
+  padding: 5px 10px;
+  margin-bottom: 0;
+}
+.member_main > .msg_content {
+  border: 1px solid #b3b3b3;
+  border-top: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
 /*會員表格*/
 .member_main .table {
   margin-bottom: 2rem;
@@ -2661,41 +2675,44 @@ footer .footer_bottom .social ul li a:hover {
 .member_main .table .tr .td:last-child {
   border-right: none;
 }
-.member_main .table .foot{
+.member_main .table .foot {
   display: flex;
+  background-color: #fff;
+  border-bottom: 1.5px solid #ddd;
 }
-.member_main .table .foot .td{
+.member_main .table .foot .td {
   flex: 3;
   line-height: 1.25;
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.25;
   padding: 10px 0;
   word-break: break-all;
 }
-.member_main .table .foot .td.foot_0{
+.member_main .table .foot .td.foot_0 {
   flex: 11;
   background-color: #b3b3b3;
   color: #fff;
   text-align: center;
   border-right: 1.5px solid #ddd;
 }
-.member_main .table .foot .td.foot_1{
+.member_main .table .foot .td.foot_1 {
   flex: 3;
   text-align: center;
   border-right: 1.5px solid #ddd;
 }
-.member_main .table .foot .td.foot_2{
+.member_main .table .foot .td.foot_2 {
   flex: 6;
   background-color: #b3b3b3;
   color: #fff;
   text-align: center;
   border-right: 1.5px solid #ddd;
 }
-.member_main .table .foot .td.foot_3{
+.member_main .table .foot .td.foot_3 {
   flex: 3;
   text-align: center;
+  border-right: 1.5px solid #ddd;
 }
-.member_main .table .foot .td.foot_4{
+.member_main .table .foot .td.foot_4 {
   flex: 6;
 }
 .member_main .table .tr .td .detail {
@@ -2738,35 +2755,35 @@ footer .footer_bottom .social ul li a:hover {
 .member_main .table .operation {
   flex-wrap: wrap;
 }
-.member_main .table .date{
+.member_main .table .date {
   flex: 0 0 140px !important;
 }
-.member_main .table .message_content{
+.member_main .table .message_content {
   justify-content: flex-start !important;
   padding: 10px 8px !important;
   font-weight: 500 !important;
 }
-.member_main .table .message_content a{
+.member_main .table .message_content a {
   color: #585858;
   text-decoration: none;
   text-align: left;
   cursor: pointer;
 }
-.member_main .table .message_content a:hover{
-  opacity: .8;
+.member_main .table .message_content a:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 992px) {
-  .member_main .table.fixed{
+  .member_main .table.fixed {
     overflow-x: scroll;
   }
-  .member_main .table.fixed .head{
+  .member_main .table.fixed .head {
     width: 876px;
   }
-  .member_main .table.fixed .tr{
+  .member_main .table.fixed .tr {
     width: 876px;
   }
-  .member_main .table.fixed .foot{
+  .member_main .table.fixed .foot {
     width: 876px;
   }
   .member_main .table .tr .td {
@@ -2783,10 +2800,9 @@ footer .footer_bottom .social ul li a:hover {
     flex: 0 0 35px !important;
   }
   .member_main .table .tr .td .operation_btn {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
-
 
 /*會員表單*/
 .member_main .form {
@@ -2973,7 +2989,7 @@ footer .footer_bottom .social ul li a:hover {
   -ms-flex-pack: end;
   justify-content: flex-end;
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .member_main .popup .popup_close i {
   cursor: pointer;
@@ -2991,7 +3007,7 @@ footer .footer_bottom .social ul li a:hover {
   padding: 5px 10px;
   margin-bottom: 0;
 }
-.member_main .popup .popup_main .content{
+.member_main .popup .popup_main .content {
   border: 1px solid #b3b3b3;
   border-top: none;
   padding: 10px;
@@ -3207,7 +3223,6 @@ footer .footer_bottom .social ul li a:hover {
     -ms-flex: 1;
     flex: 1;
   }
- 
 
   .member_main .popup .popup_main .popup_form .list .item:first-child {
     border-right: none;
