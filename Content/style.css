@@ -2762,14 +2762,22 @@ footer .footer_bottom .social ul li a:hover {
   justify-content: flex-start !important;
   padding: 10px 8px !important;
   font-weight: 500 !important;
+  text-align: left !important;
 }
-.member_main .table .message_content a {
-  color: #585858;
+.member_main .table .message_btn {
+  flex: 0 0 60px !important;
+}
+.member_main .table .message_btn a {
+  background-color: #e5796d;
+  color: #fff;
+  width: 45px;
+  text-align: center;
+  line-height: 2;
   text-decoration: none;
-  text-align: left;
   cursor: pointer;
+  border-radius: 5px;
 }
-.member_main .table .message_content a:hover {
+.member_main .table .message_btn a:hover {
   opacity: 0.8;
 }
 
@@ -2801,6 +2809,9 @@ footer .footer_bottom .social ul li a:hover {
   }
   .member_main .table .tr .td .operation_btn {
     font-size: 0.9rem;
+  }
+  .member_main .table .date {
+    flex: 0 0 70px !important;
   }
 }
 
