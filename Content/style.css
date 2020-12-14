@@ -2742,6 +2742,16 @@ footer .footer_bottom .social ul li a:hover {
   margin-bottom: 5px;
 }
 
+/*會員表格 組織群組*/
+.member_main .table .b_group_frame{display: flex;}
+.member_main .table .b_group_frame .b_group{flex: 5;}
+.member_main .table .b_group_frame .b_group_total{flex: 1;line-height: 1.25;font-size: 0.8rem;display: flex;align-items: center;justify-content: center;background-color: #fff;border-bottom: 1.5px solid #ddd;color: #585858;}
+.member_main .table .group{display: flex;}
+.member_main .table .group .group_item{flex: 4;}
+.member_main .table .tr{background-color: #fff !important;}
+.member_main .table .tr .td:last-child{border-right: 1.5px solid #ddd;}
+.member_main .table .group .group_total{flex: 1;line-height: 1.25;font-size: 0.8rem;display: flex;align-items: center;justify-content: center;background-color: #fff;border-right: 1.5px solid #ddd;border-bottom: 1.5px solid #ddd;color: #585858;}
+
 /*會員表格 欄位大小特別定義*/
 .member_main .table .number {
   -webkit-box-flex: 1 !important;
