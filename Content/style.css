@@ -2672,6 +2672,8 @@ footer .footer_bottom .social ul li a:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 0;
+  line-break: anywhere;
 }
 .member_main .table .tr .td:last-child {
   border-right: none;
