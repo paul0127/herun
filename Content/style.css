@@ -2673,7 +2673,7 @@ footer .footer_bottom .social ul li a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   width: 0;
-  line-break: anywhere;
+  word-break: break-all;
 }
 .member_main .table .tr .td:last-child {
   border-right: none;
@@ -2807,9 +2807,6 @@ footer .footer_bottom .social ul li a:hover {
   }
   .member_main .table.fixed .foot {
     width: 876px;
-  }
-  .member_main .table .tr .td {
-    word-break: break-all;
   }
   .member_main .table .tr .td .detail {
     width: 60px;
