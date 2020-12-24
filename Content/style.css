@@ -1124,6 +1124,14 @@ footer .footer_bottom .contact {
 footer .footer_bottom .contact a {
   text-decoration: none;
 }
+/*頁尾QRCODE*/
+footer .footer_bottom .qrcode{
+   flex: 0 0 160px;
+   padding-left: 1rem;
+ }
+ footer .footer_bottom .qrcode img{
+   max-width: 100%;
+ }
 /*頁尾社群icon*/
 footer .footer_bottom .social {
   -webkit-box-flex: 1;
@@ -1175,6 +1183,11 @@ footer .footer_bottom .social ul li a:hover {
     font-size: 1rem;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+  }
+  footer .footer_bottom .qrcode{
+    flex: 0 0 295px;
+    padding-left: 0;
+    margin-top: 2.25rem;
   }
   footer .footer_bottom .social {
     -ms-flex-preferred-size: 100%;
