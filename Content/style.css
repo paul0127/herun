@@ -3417,6 +3417,7 @@ footer .footer_bottom .social ul li a:hover {
 .upgrade .banner img {
   width: 100%;
 }
+/*上半部*/
 .upgrade .top {
   margin-bottom: 2rem;
 }
@@ -3441,6 +3442,7 @@ footer .footer_bottom .social ul li a:hover {
 .upgrade .top .text p font.red {
   color: #e5796d;
 }
+/*中間*/
 .upgrade .middle {
   background-color: #ac9b65;
   padding: 5rem 0;
@@ -3536,6 +3538,7 @@ footer .footer_bottom .social ul li a:hover {
   text-align: center;
   font-weight: 700;
 }
+/*下半部*/
 .upgrade .bottom {
   background-color: #ea756b;
   padding: 4.75rem 0;
@@ -3606,11 +3609,9 @@ footer .footer_bottom .social ul li a:hover {
   margin-bottom: -2px;
   margin-right: -2px;
 }
-
 .upgrade .bottom .text_border_1 {
   margin: 0 auto;
 }
-
 .upgrade .bottom .text_border_1 > .top_block {
   z-index: 4;
 }
@@ -3656,40 +3657,31 @@ footer .footer_bottom .social ul li a:hover {
   width: 100%;
 }
 
-.upgrade .go_back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 6rem 0;
-}
 .upgrade .go_back a {
-  text-align: center;
-  margin: 0 0.5rem;
   border: 1px solid #ac9b65;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 180px;
-  flex: 0 0 180px;
-  padding: 10px;
   background-color: #ac9b65;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.25rem;
-  border-radius: 5px;
-}
-.upgrade .go_back a:hover {
-  opacity: 0.8;
 }
 
 @media (max-width: 992px) {
-  .upgrade .top{margin-bottom: 1rem;}
-  .upgrade .top .title{font-size: 1.5rem;}
-  .upgrade .banner{margin-bottom: 1rem;}
-  .upgrade .top .text{padding: 1rem;font-size: 1.25rem;}
-  .upgrade .middle{padding: 2rem 0;}
-  .upgrade .middle .banner{margin-bottom: 1rem;}
+  .upgrade .top {
+    margin-bottom: 1rem;
+  }
+  .upgrade .top .title {
+    font-size: 1.5rem;
+  }
+  .upgrade .banner {
+    margin-bottom: 1rem;
+  }
+  .upgrade .top .text {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+  .upgrade .middle {
+    padding: 2rem 0;
+  }
+  .upgrade .middle .banner {
+    margin-bottom: 1rem;
+  }
   .upgrade .middle .title {
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -3709,14 +3701,31 @@ footer .footer_bottom .social ul li a:hover {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
-  .upgrade .middle .tip{font-size: 1.25rem;}
-  .upgrade .bottom .inner{padding: 1.75rem 2rem;}
-  .upgrade .bottom .inner .logo{max-width: 250px;margin-bottom: 1rem;}
-  .upgrade .bottom .inner .content{flex-wrap: wrap;}
-  .upgrade .bottom .inner .content .text{flex: 0 0 100%;justify-content: center;align-items: center;margin-bottom: 1rem;}
-  .upgrade .bottom .inner .content .text .list{font-size: 1.25rem;}
-  .upgrade .bottom .inner .content .img{margin: 0 auto;}
-  .upgrade .go_back{margin: 3rem 0;}
+  .upgrade .middle .tip {
+    font-size: 1.25rem;
+  }
+  .upgrade .bottom .inner {
+    padding: 1.75rem 2rem;
+  }
+  .upgrade .bottom .inner .logo {
+    max-width: 250px;
+    margin-bottom: 1rem;
+  }
+  .upgrade .bottom .inner .content {
+    flex-wrap: wrap;
+  }
+  .upgrade .bottom .inner .content .text {
+    flex: 0 0 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .upgrade .bottom .inner .content .text .list {
+    font-size: 1.25rem;
+  }
+  .upgrade .bottom .inner .content .img {
+    margin: 0 auto;
+  }
 }
 
 /*左側垂直選單*/
